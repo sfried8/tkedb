@@ -41,9 +41,11 @@ def PC(request,pc):
 def getTree(scroll):
     tree = []
     curr = Brother.objects.get(scroll=scroll)
-    while curr.scroll!=0:
+    i=0
+    while curr.scroll!=0 and i<11:
         tree.append(curr)
         curr = Brother.objects.get(scroll=curr.bigS)
+        i+=1
     tree.reverse()
     return tree
 

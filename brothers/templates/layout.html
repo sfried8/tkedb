@@ -40,12 +40,20 @@ input
 $(document).ready(function() {
 $('.ui.accordion')
   .accordion();
+  $('.ui.sidebar')
+  .sidebar();
+
+});
 });
   </script>
   <script src="{% static 'javascript/semantic.js' %}" type="text/javascript">
   $(document).ready(function() {
 $('.ui.accordion')
   .accordion();
+  $('.ui.sidebar')
+  .sidebar();
+
+});
 });
   </script>
  
@@ -53,25 +61,36 @@ $('.ui.accordion')
   $(document).ready(function() {
 $('.ui.accordion')
   .accordion();
+
+
 });
   </script>      
  
 </head>
 <body>
 
-<form class="ui form" action="/search/" method="get">  
+<div class="ui fixed transparent inverted red main menu" style="top:0px;left:0px">
+	<div class="container">
+	<div class="item">
+	<i class="play basic icon"></i>
+		TKE
+	</div>
+	<a class="item" href="{%url 'home'%}">
+		<i class="home icon"></i> Home
+	</a>
+	<a class="item" href="/scroll/">
+		<i class="list icon"></i> Scroll
+	</a>
+	<div class="item">
+	<form class="ui form" action="/search/" method="get">  
 	
     	
-	<a href="{%url 'home'%}">
-		<img class="ui left floated image" src="http://www.xi-tke.org/wp-content/uploads/2012/08/4363613164_7492a37696.jpg" width="121" height="103" alt="Home"/>
-	</a>
-	<h1 class="ui center aligned red header">Tau Kappa Epsilon Xi-Upsilon</h1>
 	<div class="ui action input">
-		<input name="q" type="text" placeholder="Search...">
+		<input name="q" type="text" placeholder="Search..." size="50">
 	
 		
 		<div class="ui buttons"> 
-			<button class="ui vertical animated blue button" type="submit" value="Search Brothers">
+			<button class="ui vertical animated button" type="submit" value="Search Brothers">
 				<div class="visible content"> 
 					Search Brothers 
 				</div>
@@ -80,7 +99,7 @@ $('.ui.accordion')
 				</div>
 			</button>
 			 
-			<button class="ui vertical animated blue button" type="submit" name="type" value="Search PC">
+			<button class="ui vertical animated button" type="submit" name="type" value="Search PC">
 				<div class="visible content"> 
 					Search PC 
 				</div>
@@ -95,8 +114,18 @@ $('.ui.accordion')
 	</div>
 
 </form>
+</div>
+</div>
+</div>
+
+<div class="segment">
+	HELLO
+</div>
+<div class="ui horizontal divider">TKE</div>
+<div class="segment">
 {%block content%}
 
 {%endblock%}
+</div>
 </body>
 </html>

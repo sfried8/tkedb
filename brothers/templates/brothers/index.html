@@ -31,11 +31,19 @@
 
 	<div class="ui accordion">
 		<div class="title">
-			{{brother.fname}}'s Family Tree
+			<i class="dropdown icon"></i>
+			{{brother.fname}}'s {{tree|length|add:-1}} Up
 		</div>
 		<div class="content">
 		{%for b in tree%}
+		{%if b.scroll == brother.scroll%}
+		<div class="ui clearing divider"> </div>
+		<p>{{b.name}}</p>
+		{%else%}
+
+
 			<p><a href="{% url 'detail' b.scroll%}">{{b.name}}</a></p>
+		{%endif%}
 		{%endfor%}
 		</div>
 	</div>

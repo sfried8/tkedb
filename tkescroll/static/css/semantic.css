@@ -1631,6 +1631,8 @@ body > .ui.grid {
   background-color: #FFFFFF;
   font-size: 0px;
   font-weight: normal;
+
+  position: fixed;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   border-radius: 0.1875rem;
@@ -3176,17 +3178,17 @@ body > .ui.grid {
   z-index: 999;
   margin: 0em;
   border: none;
-  width: 100%;
+  width: 50%;
 }
 
 .ui.menu.fixed,
 .ui.menu.fixed .item:first-child,
 .ui.menu.fixed .item:last-child {
-  border-radius: 0px !important;
+  border-radius: 50px !important;
 }
 
 .ui.menu.fixed.top {
-  top: 0px;
+  top: 20px;
   left: 0px;
   right: auto;
   bottom: auto;
@@ -15236,7 +15238,7 @@ body.pushed.scrolling.ui.dimmable {
 
 .ui.top.sidebar,
 .ui.bottom.sidebar {
-  height: 40px !important;
+  height: 100px !important;
 }
 
 .ui.active.bottom.sidebar {
