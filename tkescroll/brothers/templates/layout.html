@@ -1,0 +1,102 @@
+{%load staticfiles%}
+      
+<!DOCTYPE HTML>
+<html>        
+<head>
+  <meta charset="utf-8" />
+
+ 
+  <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
+ 
+  <style type="text/css">
+ @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); } 
+  @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); } 
+ h1 {
+font-family: Ubuntu-B
+}
+div
+{
+	font-family: Ubuntu-B;
+}
+p
+{
+	font-family: Ubuntu-L;
+}
+a
+{
+	font-family: Ubuntu-L;
+}
+h3
+{
+	font-family: Ubuntu-B;
+}
+input
+{
+	font-family: Ubuntu-B;
+}
+  </style>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js">
+$(document).ready(function() {
+$('.ui.accordion')
+  .accordion();
+});
+  </script>
+  <script src="{% static 'javascript/semantic.js' %}" type="text/javascript">
+  $(document).ready(function() {
+$('.ui.accordion')
+  .accordion();
+});
+  </script>
+ 
+  <script type="text/javascript">
+  $(document).ready(function() {
+$('.ui.accordion')
+  .accordion();
+});
+  </script>      
+ 
+</head>
+<body>
+
+<form class="ui form" action="/search/" method="get">  
+	
+    	
+	<a href="{%url 'home'%}">
+		<img class="ui left floated image" src="http://www.xi-tke.org/wp-content/uploads/2012/08/4363613164_7492a37696.jpg" width="121" height="103" alt="Home"/>
+	</a>
+	<h1 class="ui center aligned red header">Tau Kappa Epsilon Xi-Upsilon</h1>
+	<div class="ui action input">
+		<input name="q" type="text" placeholder="Search...">
+	
+		
+		<div class="ui buttons"> 
+			<button class="ui vertical animated blue button" type="submit" value="Search Brothers">
+				<div class="visible content"> 
+					Search Brothers 
+				</div>
+				<div class="hidden content">
+					<i class="user icon"></i>
+				</div>
+			</button>
+			 
+			<button class="ui vertical animated blue button" type="submit" name="type" value="Search PC">
+				<div class="visible content"> 
+					Search PC 
+				</div>
+				<div class="hidden content">
+					<i class="users icon"></i>
+				</div>
+			</button>
+		</div>
+
+
+			
+	</div>
+
+</form>
+{%block content%}
+
+{%endblock%}
+</body>
+</html>

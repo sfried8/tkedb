@@ -1,0 +1,7 @@
+{%extends 'layout.html'%}
+{%block content%}
+<h1>PC {{pc}}</h1>
+{%for b in brothers%}
+<p>{{b.scroll}}. <a href="{% url 'detail' b.scroll%}">{{b.name}}</a></p>
+{%endfor%}
+{%endblock%}

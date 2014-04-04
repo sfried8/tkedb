@@ -1,0 +1,42 @@
+{%extends 'layout.html'%}
+{%block content%}
+<h1 class="header">Scroll</h1>
+
+
+<div class="ui accordion">
+	{%for b in brothers%}
+			{%if b.scroll != 0%}
+	<div class="title">
+    	<i class="dropdown icon"></i>
+    	{{b.scroll}}. {{b.name}}
+  	</div>
+  	<div class="content">
+  		
+
+
+  		<p>
+    {%if b.pc != -1%}
+					PC {{b.pc}}
+					{%else%}
+					PC Unknown
+					{%endif%} </p>
+					<p>
+					{%if b.nickname != "Unknown"%}
+					{{b.nickname}}
+					{%else%}
+					Nickname Unknown
+					{%endif%}
+		</p>
+		<p>
+					{%if b.big != "Unknown"%}
+					Big: {{b.big}}
+					{%else%}
+					Big Unknown
+					{%endif%}
+		</p>
+		<input class="ui button" type="button" value="View Full Page" onClick="window.location='{%url 'detail' b.scroll%}' "/>
+  </div>
+  {%endif%}
+		{%endfor%}
+</div>
+{%endblock%}

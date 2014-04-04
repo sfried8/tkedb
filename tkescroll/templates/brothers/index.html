@@ -1,0 +1,9 @@
+<h1>{{brother.name}}</h1>
+<p>{{brother.scroll}}</p>
+{% if brother.pc != -1%}
+<p>PC {{brother.pc}}</p>
+{%else%}
+<p>Unknown PC</p>
+{%endif%}
+<p>{{brother.nickname}}</p>
+<a href="{% url 'detail' brother.bigS%}">{{brother.big}}</a>
