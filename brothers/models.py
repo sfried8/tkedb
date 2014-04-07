@@ -9,3 +9,6 @@ class Brother(models.Model):
 	nickname = models.CharField(max_length=50)
 	big = models.CharField(max_length=50)
 	bigS = models.IntegerField(max_length=50)
+
+	def __str__(self):
+		return str(self.scroll)+": "+self.name

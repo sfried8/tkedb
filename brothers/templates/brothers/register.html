@@ -1,0 +1,176 @@
+{%load staticfiles%}
+      
+<!DOCTYPE HTML>
+<html>        
+<head>
+	  <meta charset="utf-8" />
+
+ 
+  <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
+ 
+  <style type="text/css">
+ @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); } 
+  @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); } 
+ h1 {
+font-family: Ubuntu-B
+}
+div
+{
+	font-family: Ubuntu-B;
+}
+p
+{
+	font-family: Ubuntu-L;
+}
+h3
+{
+	font-family: Ubuntu-B;
+}
+input
+{
+	font-family: Ubuntu-L;
+}
+  </style>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js">
+
+
+  </script>
+
+  <script src="{% static 'javascript/semantic.js' %}" type="text/javascript">
+
+
+
+  </script>
+   <script type="text/javascript">
+
+      $(document).ready(function() {
+      $('.ui.modal')
+        .modal('attach events', '.ui.button', 'toggle');
+      $('.ui.accordion')
+        .accordion();
+      });
+      </script>
+ 
+    <title>TKE Scroll</title>
+</head>
+
+<body>
+
+    <div class="ui fixed transparent inverted red main menu" style="top:0px;left:0px;height:68px;">
+        <div class="container">
+            <div class="item" style="top:13px;">
+                TKE Xi-Upsilon
+                <i class="play basic icon"></i>
+            </div>
+            <a class="item" href="{%url 'home'%}" style="font-family:Ubuntu-L;top:13px;">
+                <i class="home icon"></i> Home
+            </a>
+        </div>
+    </div>
+<div class="ui basic segment" style="top:50px;">
+
+    <div class="ui segment">  
+        <div class="ui form">
+            <form class="ui form" method="post" action="/register/">
+                {% csrf_token %}
+                <div class="two fields">
+                    <div class="field">
+                        {{form.fname}}
+                        {%if form.fname.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.fname.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                    <div class="field">
+                        {{form.lname}}
+                        {%if form.lname.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.lname.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        {{form.username}}
+                        {%if form.username.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.username.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                    <div class="field">
+                        {{form.email}}
+                        {%if form.email.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.email.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        {{form.password}}
+                        {%if form.password.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.password.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                    <div class="field">
+                        {{form.passwordConfirm}}
+                        {%if form.passwordConfirm.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.passwordConfirm.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                </div>
+
+                <div class="two fields">
+                <div class="field">
+                    {{form.authKey}}
+                    {%if form.authKey.errors%}
+                    <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                        {{form.authKey.errors}}
+                    </div>
+                    {%endif%}
+                </div>
+               
+                </div>
+
+                <button class="ui vertical animated button" type="submit" name="Submit">
+                    Submit
+                </button>
+            </form>
+            </div>  
+            <div class="ui modal">
+                              <i class="close icon"></i>
+                              <div class="header">
+                                Contact the Histor
+                              </div>
+                              <div class="content">
+                                <div class="ui form">
+                                <form class="ui form" method="post" action="/message/">
+                                    {%csrf_token%}
+                                    <textarea rows="10" cols="100" name="message"></textarea>
+                                    <input class="ui input" type="text" name="eadd" placeholder="Email Address"/>
+                                    <button class="ui button" type="submit" name="type" value="Send">
+                                        Send
+                                    </button>
+                                    <button class="ui button" type="submit" name="type" value="Cancel">
+                                        Cancel
+                                    </button>
+                                </form>
+                            </div>
+                              </div>
+                            </div>
+          
+    </div>
+     <button class="ui button">Contact the Histor</button>
+</div>
+</body>
+</html>
+

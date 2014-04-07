@@ -2,9 +2,44 @@
 {%block content%}
 <head>
     <title>TKE Scroll</title>
-</head>
-<h1>Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
-<p>Enter a search term into the bar above. The database will search for any brothers with the search term in their full name OR nickname. Alternatively, enter a scroll number and you will be linked to that brother's page with his information. Some pages have missing information; this is due to the info not being entered into the Excel sheet that I have. This will be fixed (...eventually).</p>
+      <script type="text/javascript">
 
-<img class="ui medium image" src="http://www.xi-tke.org/wp-content/uploads/2012/08/4363613164_7492a37696.jpg"/>
+      $(document).ready(function() {
+      $('.ui.modal')
+      	.modal('attach events', '.ui.button', 'toggle');
+      
+      });
+      </script>
+</head>
+{%if messages%}
+<div class="ui message">
+	{%for message in messages%}
+		<p>{{message}}</p>
+	{%endfor%}
+</div>
+{%endif%}
+<div class="ui message" style="width:650px;margin:0 auto;">
+<h1 class="ui huge center aligned header">Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
+<p style="align:center;">Welcome, {{user}}! Enter a search term into the bar above. Press Enter or click Search and the database will search for any brothers with the search term in their full name OR nickname. Alternatively, enter a number and click Scroll to be linked to that scroll number brother's page or click PC to be linked to a list of brothers in that PC. Some pages have missing information; this is not because the info is actually not known, it is simply because it hasn't yet been entered into the Excel sheet that I have. This will be fixed when I get the chance.<br> In the meantime, if you notice incorrect information or you have something that you want me to submit, click this button to send me a message.</p>
+<button class="ui button">Report Issue</button>
+</div>
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Report An Issue
+  </div>
+  <div class="content">
+    <form class="ui form" method="post" action="/message/">
+    	{%csrf_token%}
+    	<textarea rows="10" cols="100" name="message"></textarea>
+    	<button class="ui button" type="submit" name="type" value="Send">
+    		Send
+    	</button>
+    	<button class="ui button" type="submit" name="type" value="Cancel">
+    		Cancel
+    	</button>
+    </form>
+  </div>
+</div>
+<img class="ui medium image" src="http://www.xi-tke.org/wp-content/uploads/2012/08/4363613164_7492a37696.jpg" style="margin:0 auto;" />
 {%endblock%}

@@ -24,7 +24,24 @@
 	</ul>
 	<p>{%endif%} </p>
 	<div class="footer">
-	<input class="ui button" type="button" value="View Next in Scroll" onClick="window.location='/brothers/{{brother.scroll|add:1}}/' "/>
+	<div class="ui buttons">
+		{%if brother.scroll == 1%}
+		<input class="ui disabled button" type="button" value="View Prev in Scroll"/>
+		{%else%}
+		<button class="ui vertical animated button" type="button" onClick="window.location='/brothers/{{brother.scroll|add:-1}}/' ">
+			<div class="visible content">View Prev in Scroll</div>
+			<div class="hidden content"><i class="left arrow icon"></i></div>
+		</button>
+		{%endif%}
+		{%if brother.scroll == lastScroll%}
+		<input class="ui disabled button" type="button" value="View Next in Scroll"/>
+		{%else%}
+		<button class="ui vertical animated button" type="button" onClick="window.location='/brothers/{{brother.scroll|add:1}}/' ">
+			<div class="visible content">View Next in Scroll</div>
+			<div class="hidden content"><i class="right arrow icon"></i></div>
+		</button>
+		{%endif%}
+	</div>
 </div>
 </div>
 <div class="column">
