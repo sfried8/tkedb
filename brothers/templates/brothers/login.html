@@ -6,6 +6,7 @@
 	  <meta charset="utf-8" />
 
  
+  <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
   <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
  
   <style type="text/css">
@@ -75,6 +76,7 @@ input
 									</div>
 								</button>
 							</div>
+
 							
 							<div class="field">
 								<button class="ui vertical animated button" type="button" onClick="window.location='/register/' ">
@@ -105,8 +107,18 @@ input
 <div class="ui message" style="width:650px;margin:0 auto;">
 <h1 class="ui huge center aligned header">Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
 <p style="align:center;">Welcome to the Tau Kappa Epsilon Xi-Upsilon Scroll. In order to use this database, you must have an authorized login. Please login above.</p>
+							<div class="field">
+								<button class="ui vertical animated button" type="button" onClick="window.location='/forgot/'">
+									<div class="visible content">
+										Forgot Password?
+									</div>
+									<div class="hidden content">
+										<i class="help icon"></i>
+									</div>
+								</button>
+							</div>
 </div>
 
-<img class="ui medium image" src="http://www.xi-tke.org/wp-content/uploads/2012/08/4363613164_7492a37696.jpg" style="margin:0 auto;" />
+<img class="ui medium image" src="{{STATIC_URL}}images/triangle.jpg" style="margin:0 auto;" />
 </div>
 </body>

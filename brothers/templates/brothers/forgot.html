@@ -1,0 +1,85 @@
+{%load staticfiles%}
+      
+<!DOCTYPE HTML>
+<html>        
+<head>
+	  <meta charset="utf-8" />
+
+ 
+  <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
+  <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
+ 
+  <style type="text/css">
+ @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); } 
+  @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); } 
+ h1 {
+font-family: Ubuntu-B
+}
+div
+{
+	font-family: Ubuntu-B;
+}
+p
+{
+	font-family: Ubuntu-L;
+}
+h3
+{
+	font-family: Ubuntu-B;
+}
+input
+{
+	font-family: Ubuntu-L;
+}
+</style>
+
+    <title>Forgot Password - TKE Scroll</title>
+</head>
+<body>
+<div class="ui fixed transparent inverted red main menu" style="top:0px;left:0px;height:68px;">
+        <div class="container">
+            <div class="item" style="top:13px;">
+                TKE Xi-Upsilon
+                <i class="play basic icon"></i>
+            </div>
+            <a class="item" href="{%url 'home'%}" style="font-family:Ubuntu-L;top:13px;">
+                <i class="home icon"></i> Home
+            </a>
+        </div>
+</div>
+<div class="ui basic segment" style="top:50px;">
+
+    <div class="ui segment" style="width:500px;">  
+        <div class="ui form">
+            <form class="ui form" method="post" action="/forgot/">
+                {% csrf_token %}
+                
+                    <div class="field">
+                        {{form.username}}
+                        {%if form.username.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.username.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                    
+                        <h1 style="left:250px;">OR</h1>
+                    
+                    <div class="field">
+                        {{form.email}}
+                        {%if form.email.errors%}
+                        <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                            {{form.email.errors}}
+                        </div>
+                        {%endif%}
+                    </div>
+                
+                <button class="ui button" type="submit" value="New Password">
+                  Get New Password
+                </button>
+            </form>
+        </div>
+</div>
+</div>
+</body>
+</html>

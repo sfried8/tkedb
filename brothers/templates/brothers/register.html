@@ -6,6 +6,7 @@
 	  <meta charset="utf-8" />
 
  
+  <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
   <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
  
   <style type="text/css">
@@ -45,14 +46,22 @@ input
    <script type="text/javascript">
 
       $(document).ready(function() {
-      $('.ui.modal')
-        .modal('attach events', '.ui.button', 'toggle');
+        $('#contactForm')
+        .modal("attach events","#contactButton","show")
+        
+        if ("{{errors}}")
+        {
+        $('#contactForm')
+        .modal('show');
+        }
+
+
       $('.ui.accordion')
         .accordion();
       });
       </script>
  
-    <title>TKE Scroll</title>
+    <title>Register - TKE Scroll</title>
 </head>
 
 <body>
@@ -146,30 +155,43 @@ input
                 </button>
             </form>
             </div>  
-            <div class="ui modal">
-                              <i class="close icon"></i>
-                              <div class="header">
-                                Contact the Histor
-                              </div>
-                              <div class="content">
-                                <div class="ui form">
-                                <form class="ui form" method="post" action="/message/">
-                                    {%csrf_token%}
-                                    <textarea rows="10" cols="100" name="message"></textarea>
-                                    <input class="ui input" type="text" name="eadd" placeholder="Email Address"/>
-                                    <button class="ui button" type="submit" name="type" value="Send">
-                                        Send
-                                    </button>
-                                    <button class="ui button" type="submit" name="type" value="Cancel">
-                                        Cancel
-                                    </button>
-                                </form>
-                            </div>
-                              </div>
-                            </div>
+            <div class="ui modal" id="contactForm">
+                <i class="close icon"></i>
+                <div class="header">
+                    Contact the Histor
+                </div>
+                              
+                <div class="ui form">
+                    <form class="ui form" method="post" action="/message/">
+                        {%csrf_token%}
+                        <div class="content">
+                            {{messForm.message}}
+                            {%if messForm.message.errors%}
+                                <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                                    {{messForm.message.errors}}
+                                </div>
+                            {%endif%}
+                            {{messForm.email}}
+                            {%if messForm.email.errors%}
+                                <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
+                                    {{messForm.email.errors}}
+                                </div>
+                            {%endif%}
+                        </div>
+                        <div class="actions">
+                            <button class="ui button" type="submit" name="type" value="Send">
+                                Send
+                            </button>
+                            <button id="contactButton" class="ui button" name="type" value="Cancel">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
           
     </div>
-     <button class="ui button">Contact the Histor</button>
+     <button id="contactButton" class="ui button">Contact the Histor</button>
 </div>
 </body>
 </html>

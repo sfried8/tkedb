@@ -10,14 +10,16 @@ from email.utils import parseaddr
 from django.core.mail import send_mail
 from time import strftime, localtime
 from django.contrib import messages
-from brothers.forms import UserForm, LoginForm
+from brothers.forms import UserForm, LoginForm, MessageForm, MessageEmailForm, ForgotForm, newPassForm, EditForm
 from django import forms
 from django.core.validators import validate_email
+import string
+import random
 
 
 def home(request):
     if request.user.is_authenticated() and request.user.is_active:
-        return render(request, 'brothers/home.html',{'user':request.user.first_name})
+        return render(request, 'brothers/home.html',{'user':request.user.first_name,'form':MessageForm()})
     else:
     	form = LoginForm()
         return render(request, 'brothers/login.html',{'form':form})
@@ -29,6 +31,31 @@ def index(request):
 def detail(request, scroll):
     b = Brother.objects.get(scroll=scroll)
     return render(request, 'brothers/index.html',{'brother':b,'littles':Brother.objects.filter(bigS=b.scroll),'lastScroll':Brother.objects.all().aggregate(Max('scroll'))['scroll__max'],'tree':getTree(b.scroll)})
+
+def editBrother(request,scroll):
+    if not request.user.is_superuser:
+        return redirect('/brothers/'+scroll)
+    if request.method == "POST":
+        form = EditForm(request.POST,b=Brother.objects.get(scroll=scroll))
+        if form.is_valid():
+            brother = Brother.objects.get(scroll=scroll)
+            brother.fname = request.POST["fname"]
+            brother.lname = request.POST["lname"]
+            brother.name = request.POST["name"]
+            brother.pc = request.POST["pc"]
+            brother.nickname = request.POST["nickname"]
+            brother.big = request.POST["big"]
+            if brother.big != "Unknown":
+                brother.bigS = Brother.objects.get(name=brother.big).scroll
+            brother.save()
+            return redirect('/brothers/'+scroll)
+        else:
+            return render(request,'brothers/edit.html',{'form':form})
+    else:
+        return render(request,'brothers/edit.html',{'form':EditForm(b=Brother.objects.get(scroll=scroll))})
+
+
+
 @login_required(login_url="brothers.views.login")
 def scroll(request):
     return render(request, 'brothers/scroll.html',{'brothers':Brother.objects.all()})
@@ -65,40 +92,85 @@ def register(request):
             newUser.first_name = request.POST['fname']
             newUser.last_name = request.POST['lname']
             newUser.save()
+            user = authenticate(username=username,password=password)
+            DJlogin(request,user)
             return redirect('/')
         else:
-            return TemplateResponse(request,'brothers/register.html',{'form':form,'errors':True})
+            messForm = MessageEmailForm()
+            return TemplateResponse(request,'brothers/register.html',{'form':form,'messForm':messForm})
     else:
         form = UserForm()
-        return TemplateResponse(request, 'brothers/register.html',{'form':form})
+        messForm = MessageEmailForm()
+        return TemplateResponse(request, 'brothers/register.html',{'form':form,'messForm':messForm})
 
+def forgot(request):
+    if request.method == "POST":
+        form = ForgotForm(request.POST)
+        if form.is_valid():
+            username = request.POST.get('username')
+            email = request.POST.get('email')
+            #raise forms.ValidationError("Username: "+username+"  Email: "+email)
+            if username == "" and email == "":
+                return redirect('/')
+            if username != "":
+                email = DJuser.objects.get(username=username).email
+            user = DJuser.objects.get(email=email)
+            code = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(8))
+            message = "This message is intended for "+user.first_name+" "+user.last_name+". If this is not you, please disregard this message.\n"
+            message+= "Your previous password is void. Enter the code below on the webpage, and you will be able to make a new password.\n"
+            message+= "Activation Code: "+code+"\n"
+            message+= "Next time, don't forget your password, ya dingus."
+            send_mail("New Password for TKE DB",message,"from",[email],fail_silently=False)
+            user.set_password(code)
+            user.save()
+            return redirect('/newPass/'+user.username)
+        return render(request, 'brothers/forgot.html',{'form':form})
+    else:
+        return render(request, 'brothers/forgot.html',{'form':ForgotForm()})
+
+def newPass(request,username):
+    if request.method=="POST":
+        form = newPassForm(request.POST)
+        user = DJuser.objects.get(username=username)
+        if form.is_valid():
+            if user.check_password(request.POST['code']):
+                user.set_password(request.POST['newPass'])
+                user.save()
+                return redirect('/')
+        return render(request, 'brothers/newPass.html',{'form':form,'user':user})
+    else:
+        return render(request, 'brothers/newPass.html',{'form':newPassForm(),'user':user})
+
+def goHome(request):
+    return redirect('/')
 
 def message(request):
-    if request.POST.get("type","Cancel") == "Send":
-        eadd = ""
-        mess = ""
-        if not request.user.is_authenticated() and not request.user.is_active:
-            if request.POST.get('eadd'):
-                eadd = request.POST['eadd']
-            try:
-                validate_email(eadd)
-                mess += "Sent: "+strftime("%m/%d/%y at %H:%M:%S",localtime())+"\n\""+request.POST.get('message')+"\"\nReturn Address: "+eadd
-                send_mail("TKE DB KEY REQUEST",mess,"from",['sfried8@gmail.com'],fail_silently=False)
-                messages.add_message(request,messages.INFO,"Success! Your message has been sent. I will read it ASAP.")
-                return redirect('/')
-        	
-            except :
-            	messages.add_message(request,messages.INFO,"Please enter a valid email address so I can send you the key!")
-                return redirect('/register/')
-                
-        
-        
+    if request.method == "POST":
+        if request.POST.get("type","Cancel") == "Send":
+            eadd = ""
+            mess = ""
+            if not request.user.is_authenticated() and not request.user.is_active:
+                form = MessageEmailForm(request.POST)
+                if form.is_valid():                
+                    eadd = request.POST['email']
+                    mess += "Sent: "+strftime("%m/%d/%y at %H:%M:%S",localtime())+"\n\""+request.POST.get('message')+"\"\nReturn Address: "+eadd
+                    send_mail("TKE DB KEY REQUEST",mess,"from",['sfried8@gmail.com'],fail_silently=False)
+                    return redirect('/register/')
+                else:
+                    return TemplateResponse(request,'brothers/register.html',{'messForm':form,'form':UserForm(),'errors':True})                 
+            else:
+                form = MessageForm(request.POST)
+                if form.is_valid():
+                    mess += "Message from "+request.user.first_name+" "+request.user.last_name+":\n\""+request.POST.get('message')+"\"\n"
+                    send_mail("TKE DB ISSUE",mess,"from",['sfried8@gmail.com'],fail_silently=False)
+                    return redirect('/')
+                else:
+                    return render(request,'brothers/home.html',{'form':form,'errors':True,'user':request.user.first_name}) 
         else:
-            mess += "Message from "+request.user.first_name+" "+request.user.last_name+":\n\""+request.POST.get('message')+"\"\n"
-            send_mail("TKE DB ISSUE",mess,"from",['sfried8@gmail.com'],fail_silently=False)
-            messages.add_message(request,messages.INFO,"Success! Your message has been sent. I will read it ASAP.")
-            return redirect('/')
-            
+            if not request.user.is_authenticated() and not request.user.is_active:
+                return redirect('/register/') 
+            else:
+                return redirect('/')
     return redirect('/')
 
 
@@ -189,10 +261,11 @@ def longestName():
     b3 = sorted(b2,key=lambda name: len(name))[-1]
     return Brother.objects.get(name=b3)
 
+@login_required(login_url="brothers.views.login")
 def facts(request):
     biggestGap=findMaxGap()
     mostLittles=findMostLittles()
     largestPC=findLargestPC()
-    return render(request, 'brothers/stats.html',{'biggestGap':biggestGap[0],'biggestGapNum':biggestGap[1],'mostLittles':mostLittles[0],'mostLittlesNum':mostLittles[1],'largestPC':largestPC[0],'largestPCNum':largestPC[1],'longestNick':longestNickname(),'longestName':longestName()})
+    return render(request, 'brothers/stats.html',{'biggestGap':biggestGap[0],'biggestGapNum':biggestGap[1],'mostLittles':mostLittles[0],'mostLittlesNum':mostLittles[1],'largestPC':largestPC[0],'largestPCNum':largestPC[1]})
 
             

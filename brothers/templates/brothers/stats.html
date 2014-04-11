@@ -1,5 +1,6 @@
 {%extends 'layout.html'%}
 {%block content%}
+<title>"Fun" Facts - TKE Scroll</title>
 <h1 class="ui center aligned red header">"Fun" Facts</h1>
 <p>
 	Here are some "fun" facts. In reality, very few of these will be at all interesting, let alone fun.
@@ -13,12 +14,6 @@
 	</div>
 	<div class="item"style="font-family:Ubuntu-L;">
 		The largest pledge class is <a href="/PC/{{largestPC}}">PC {{largestPC}}</a>, which is made up of a staggering {{largestPCNum}} brothers!
-	</div>
-	<div class="item"style="font-family:Ubuntu-L;">
-		The longest nickname is {{longestNick.nickname}}, belonging to <a href="{%url 'detail' longestNick.scroll%}">{{longestNick.name}}</a>.
-	</div>
-	<div class="item"style="font-family:Ubuntu-L;">
-		The longest name is <a href="{%url 'detail' longestName.scroll%}">{{longestName.name}}</a>.
 	</div>
 	<div class="item"style="font-family:Ubuntu-L;">
 		The most objectively badass name is <a href="{%url 'detail' 366%}">Zebulon Robbins, III</a>.

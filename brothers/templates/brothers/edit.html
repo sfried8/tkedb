@@ -1,0 +1,30 @@
+<form method="post">
+{%csrf_token%}
+First Name
+{{form.fname}}
+{{form.fname.errors}}
+
+Last Name
+{{form.lname}}
+{{form.lname.errors}}
+
+Full Name
+{{form.name}}
+{{form.name.errors}}
+
+PC
+{{form.pc}}
+{{form.pc.errors}}
+
+Nickname
+{{form.nickname}}
+{{form.nickname.errors}}
+
+Big
+{{form.big}}
+{{form.big.errors}}
+
+
+
+<button type="submit">Submit</button>
+</form>

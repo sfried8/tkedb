@@ -42,10 +42,16 @@
 		</button>
 		{%endif%}
 	</div>
+		{%if request.user.is_superuser%}
+		<button class="ui button" type="button" onClick="window.location='/brothers/{{brother.scroll}}/edit/' ">
+			Edit
+		</button>
+		{%endif%}
+
 </div>
 </div>
 <div class="column">
-
+{%if brother.big != "Unknown"%}
 	<div class="ui accordion">
 		<div class="title">
 			<i class="dropdown icon"></i>
@@ -64,6 +70,7 @@
 		{%endfor%}
 		</div>
 	</div>
+{%endif%}
 </div>
 </div>
 </body>
