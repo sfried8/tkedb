@@ -53,7 +53,7 @@ An email has been sent to {{user.email}} with an activation code. Enter the acti
 </div>
     <div class="ui segment">  
         <div class="ui form">
-            <form class="ui form" method="post" action="/newPass/{{user.username}}/">
+            <form class="ui form" method="post" action="/newPass/{{user}}/">
                 {% csrf_token %}
                 <div class="two fields">
                     <div class="field">

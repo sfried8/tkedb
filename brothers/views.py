@@ -137,9 +137,9 @@ def newPass(request,username):
                 user.set_password(request.POST['newPass'])
                 user.save()
                 return redirect('/')
-        return render(request, 'brothers/newPass.html',{'form':form,'user':user})
+        return render(request, 'brothers/newPass.html',{'form':form,'user':username})
     else:
-        return render(request, 'brothers/newPass.html',{'form':newPassForm(),'user':user})
+        return render(request, 'brothers/newPass.html',{'form':newPassForm(),'user':username})
 
 def goHome(request):
     return redirect('/')
