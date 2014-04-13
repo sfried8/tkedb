@@ -1,26 +1,29 @@
 {%load staticfiles%}
       
 <!DOCTYPE HTML>
-<html>        
+<html style="">        
 <head>
   <meta charset="utf-8" />
-
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
  
   <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
   <style type="text/css">
  @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); } 
   @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); } 
+
  h1 {
 font-family: Ubuntu-B
 }
 div
 {
 	font-family: Ubuntu-B;
+	
 }
 p
 {
 	font-family: Ubuntu-L;
+
 }
 a
 {
@@ -65,59 +68,73 @@ $('.ui.accordion')
         }
       ]
     }
-
+    $(window).bind('resize', function()
+    {
+        resizeMe();
+        }).trigger('resize');
 });
+});
+
+    
+function resizeMe(){
+var preferredHeight = 768;  
+
+var displayHeight = $(window).height();
+var percentage = displayHeight / preferredHeight;
+var newFontSize = Math.floor(fontsize * percentage) - 1;
+$("p").css("font-size", newFontSize);
   });
+
   </script>      
  
 </head>
-<body>
+<body style="height:100%;">
 
-<div class="ui fixed transparent inverted red main menu" style="top:0px;left:0px">
-	<div class="container">
-	<div class="item" style="top:0px;">
+<div class="ui fixed transparent inverted red main menu" style="top:0px;left:0px;position:fixed;">
+	<div class="container"style="">
+	<div class="item" style="top:0px;position:relative;overflow:auto;min-width:12%;width:12%;	white-space: nowrap;">
 		TKE Xi-Upsilon
 	<i class="play basic icon"></i>
 	</div>
-	<a class="item" href="{%url 'home'%}">
-		<i class="home icon"></i> Home
+	<a class="item" href="{%url 'home'%}"style="position:relative;overflow:auto;min-width:8%;width:8%;	white-space: nowrap;">
+		<i class="home icon"></i>Home
 	</a>
-	<a class="item" href="/scroll/">
+	<a class="item" href="/scroll/"style="position:relative;overflow:auto;min-width:8%;width:8%;	white-space: nowrap;">
 		<i class="list icon"></i> Scroll
 	</a>
-	<a class="item" href="/facts/">
+	<a class="item" href="/facts/"style="position:relative;overflow:auto;min-width:11%;width:11%;	white-space: nowrap;">
 		<i class="lightbulb icon"></i> "Fun" Facts
 	</a>
-	<div class="item">
-	<div class="ui form">
-	<form class="ui form" action="/search/" method="get">  
+	<div class="item"style="position:relative;overflow:auto;min-width:50%;width:50%;white-space: nowrap;">
+	<div class="ui form"style="white-space: nowrap;">
+	<form class="ui form" action="/search/" method="get"style="white-space: nowrap;">  
 	
     	
-	<div class="ui action input">
-		<input id='q' name="q" type="text" placeholder="Search..." size="30">
+	<div class="ui input">
+		<input id='q' name="q" type="text" placeholder="Search..." size="30" style="position:relative;overflow:auto;min-width:45%;width:45%;white-space: nowrap;">
 	
 		
-		<div class="ui buttons"> 
-			<button class="ui vertical animated button" type="submit" value="Search Brothers">
+		<div class="ui buttons"style="position:relative;overflow:auto;min-width:width:45%;"> 
+			<button class="ui vertical animated button" type="submit" value="Search Brothers"style="position:relative;overflow:auto;min-width:35%;width:35%;white-space: nowrap;">
 				<div class="visible content"> 
-					Search
+				Search
 				</div>
 				<div class="hidden content">
 					<i class="search icon"></i>
 				</div>
 			</button>
-			<button class="ui vertical animated button" type="submit" name="type" value="Scroll">
-				<div class="visible content"> 
-					Scroll
+			<button class="ui vertical animated button" type="submit" name="type" value="Scroll" style="position:relative;overflow:auto;min-width:37%;width:35%;white-space: nowrap;">
+				<div class="visible content"style="position:relative;overflow:auto;min-width:100%;width:100%;left:-5px;"> 
+				Scroll
 				</div>
-				<div class="hidden content">
+				<div class="hidden content"style="">
 					<i class="user icon"></i>
 				</div>
 			</button>
 			 
-			<button class="ui vertical animated button" type="submit" name="type" value="Search PC">
+			<button class="ui vertical animated button" type="submit" name="type" value="Search PC" style="position:relative;overflow:auto;min-width:28%;width:28%;white-space: nowrap;">
 				<div class="visible content"> 
-					PC 
+				PC 
 				</div>
 				<div class="hidden content">
 					<i class="users icon"></i>
@@ -129,11 +146,11 @@ $('.ui.accordion')
 			
 	</div>
 
-<div class="ui error message"></div>
+<div class="ui error message"style="position:absolute;right:0px;"></div>
 </form>
 </div>
 </div>
-	<a class="item" href="/logout/">
+	<a class="item" href="/logout/"style="position:relative;overflow:auto;min-width:10%;width:10%;white-space: nowrap;">
 		<i class="sign out icon"></i>Log Out
 	</a>
 </div>
