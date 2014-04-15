@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.template.response import TemplateResponse
 from django.db.models import Max
 from brothers.models import Brother
@@ -30,7 +30,7 @@ def index(request):
 @login_required(login_url="brothers.views.login")
 def detail(request, scroll):
     b = Brother.objects.get(scroll=scroll)
-    return render(request, 'brothers/index.html',{'brother':b,'littles':Brother.objects.filter(bigS=b.scroll),'lastScroll':Brother.objects.all().aggregate(Max('scroll'))['scroll__max'],'tree':getTree(b.scroll)})
+    return render(request, 'brothers/index.html',{'brother':b,'littles':Brother.objects.filter(bigS=b.scroll),'lastScroll':Brother.objects.all().aggregate(Max('scroll'))['scroll__max'],'tree':getTree(b.scroll),'form':MessageForm()})
 
 def editBrother(request,scroll):
     if not request.user.is_superuser:
@@ -155,22 +155,19 @@ def message(request):
                     eadd = request.POST['email']
                     mess += "Sent: "+strftime("%m/%d/%y at %H:%M:%S",localtime())+"\n\""+request.POST.get('message')+"\"\nReturn Address: "+eadd
                     send_mail("TKE DB KEY REQUEST",mess,"from",['sfried8@gmail.com'],fail_silently=False)
-                    return redirect('/register/')
+                    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
                 else:
                     return TemplateResponse(request,'brothers/register.html',{'messForm':form,'form':UserForm(),'errors':True})                 
             else:
                 form = MessageForm(request.POST)
                 if form.is_valid():
-                    mess += "Message from "+request.user.first_name+" "+request.user.last_name+":\n\""+request.POST.get('message')+"\"\n"
+                    mess += "Message from "+request.user.first_name+" "+request.user.last_name+":\n\""+request.POST.get('message')+"\"\non page "+request.META.get('HTTP_REFERER')
                     send_mail("TKE DB ISSUE",mess,"from",['sfried8@gmail.com'],fail_silently=False)
-                    return redirect('/')
+                    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
                 else:
                     return render(request,'brothers/home.html',{'form':form,'errors':True,'user':request.user.first_name}) 
         else:
-            if not request.user.is_authenticated() and not request.user.is_active:
-                return redirect('/register/') 
-            else:
-                return redirect('/')
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     return redirect('/')
 
 
@@ -182,13 +179,19 @@ def search(request):
             if q == '':
                 return redirect('/search/')
             if request.GET.get("type","Search Brothers") == "Scroll":
-                if int(q) <= 0 or int(q) > len(Brother.objects.all())-1:
-                    return redirect('/search/')
-                return(redirect('/brothers/'+q))
+                try:
+                    if int(q) <= 0 or int(q) > len(Brother.objects.all())-1:
+                        return redirect('/search/')
+                    return(redirect('/brothers/'+q))
+                except:
+                        return redirect('/search/')
             if request.GET.get("type","Search Brothers") == "Search PC":
-                if int(q) <= 0 or int(q) > Brother.objects.get(id=len(Brother.objects.all())-1).pc:
+                try:
+                    if int(q) <= 0 or int(q) > Brother.objects.get(id=len(Brother.objects.all())-1).pc:
+                        return redirect('/search/')
+                    return redirect('/PC/'+q)
+                except:
                     return redirect('/search/')
-                return redirect('/PC/'+q)
             else:
                 b1 = Brother.objects.filter(name__icontains=q)
                 b2 = Brother.objects.filter(nickname__icontains=q)
