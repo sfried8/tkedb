@@ -2,53 +2,53 @@
 {%block content%}
 <head style="height:100%;">
     <title>TKE Scroll</title>
-      <script type="text/javascript">
-
-      $(document).ready(function() {
-      $('#contactForm')
-        .modal("attach events","#issueButton","show")
-        
-        if ("{{errors}}")
-        {
+    <script type="text/javascript">
+        $(document).ready(function() {
         $('#contactForm')
-        .modal('show');
-        }
-      
-      });
-      </script>
+            .modal("attach events","#issueButton","show")
+            
+            if ("{{errors}}")
+            {
+            $('#contactForm')
+            .modal('show');
+            }
+        
+        });
+    </script>
 </head>
-
 <div class="ui message" style="width:650px;margin:0 auto;">
-<h1 class="ui huge center aligned header">Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
-<p style="align:center;">Welcome, {{user}}! Enter a search term into the bar above. Press Enter or click Search and the database will search for any brothers with the search term in their full name OR nickname. Alternatively, enter a number and click Scroll to be linked to that scroll number brother's page or click PC to be linked to a list of brothers in that PC. Some pages have missing information; this is not because the info is actually not known, it is simply because it hasn't yet been entered into the Excel sheet that I have. This will be fixed when I get the chance.<br> In the meantime, if you notice incorrect information or you have something that you want me to submit, click this button to send me a message.</p>
-<button id="issueButton" class="ui button">Report Issue</button>
+    <h1 class="ui huge center aligned header">Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
+    <p style="align:center;">Welcome, {{user}}! Enter a search term into the bar above. Press Enter or click Search and the database will search for any brothers with the search term in their full name OR nickname. Alternatively, enter a number and click Scroll to be linked to that scroll number brother's page or click PC to be linked to a list of brothers in that PC. Some pages have missing information; it is possible that this information is actually not in our records, or it simply hasn't been entered yet. Either way, I need your help! If you notice incorrect information or you have something that you want me to add, click this button or the button on that brother's page to send me a message. I'll tend to it ASAP.</p>
+    <button id="issueButton" class="ui vertical animated button">
+    <div class="visible content">Contact the histor</div>
+    <div class="hidden content"><i class="mail icon"></i></div>
+    </button>
 </div>
 <div class="ui modal" id="contactForm">
-  <i class="close icon"></i>
-  <div class="header">
-    Report An Issue
-  </div>
-  
+    <i class="close icon"></i>
+    <div class="header">
+        Report An Issue
+    </div>
+
     <form class="ui form" method="post" action="/message/">
-    	{%csrf_token%}
-      <div class="content">
-    	 {{form.message}}
-       {%if form.message.errors%}
+        {%csrf_token%}
+        <div class="content">
+            {{form.message}}
+            {%if form.message.errors%}
             <div class="ui red pointing prompt label transition visible" style="font-family:Ubuntu-L;display:inline-block;">
                 {{form.message.errors}}
             </div>
-        {%endif%}
-      </div>
-      <div class="actions">
-    	 <button class="ui button" type="submit" name="type" value="Send">
-    	 	Send
-    	 </button>
-    	 <button id="issueButton" class="ui button" name="type" value="Cancel">
-    		Cancel
-    	 </button>
-      </div>
+            {%endif%}
+        </div>
+        <div class="actions">
+            <button class="ui button" type="submit" name="type" value="Send">
+            Send
+            </button>
+            <button id="issueButton" class="ui button" name="type" value="Cancel">
+            Cancel
+            </button>
+        </div>
     </form>
-
 </div>
 <img class="ui medium image" src="{{STATIC_URL}}images/triangle.jpg" style="margin:0 auto;" />
 {%endblock%}

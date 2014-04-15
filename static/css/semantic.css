@@ -5581,32 +5581,62 @@ i.massive.basic.icon {
 
 /* Horizontal */
 
-.ui.animated.button .visible.content,
-.ui.animated.button .hidden.content {
+.ui.left.animated.button .visible.content,
+.ui.left.animated.button .hidden.content {
   -webkit-transition: right 0.3s ease 0s;
   transition: right 0.3s ease 0s;
 }
 
-.ui.animated.button .visible.content {
+.ui.left.animated.button .visible.content {
   left: auto;
   right: 0%;
 }
 
-.ui.animated.button .hidden.content {
+.ui.left.animated.button .hidden.content {
   top: 50%;
   left: auto;
   right: -100%;
   margin-top: -0.55em;
 }
 
-.ui.animated.button:hover .visible.content {
+.ui.left.animated.button:hover .visible.content {
   left: auto;
   right: 200%;
 }
 
-.ui.animated.button:hover .hidden.content {
+.ui.left.animated.button:hover .hidden.content {
   left: auto;
   right: 0%;
+}
+
+/*Backwards*/
+
+.ui.right.animated.button .visible.content,
+.ui.right.animated.button .hidden.content {
+  -webkit-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+}
+
+.ui.right.animated.button .visible.content {
+  right: auto;
+  left: 0%;
+}
+
+.ui.right.animated.button .hidden.content {
+  top: 50%;
+  right: auto;
+  left: -100%;
+  margin-top: -0.55em;
+}
+
+.ui.right.animated.button:hover .visible.content {
+  right: auto;
+  left: 200%;
+}
+
+.ui.right.animated.button:hover .hidden.content {
+  right: auto;
+  left: 0%;
 }
 
 /* Vertical */
@@ -5638,7 +5668,7 @@ i.massive.basic.icon {
 }
 
 .ui.vertical.animated.button:hover .hidden.content {
-  top: 50%;
+  top: 30%;
   right: auto;
 }
 
