@@ -199,6 +199,36 @@ def search(request):
             return render(request, 'brothers/search_form.html',{'b1':b1,'b2':b2})
         return render(request, 'brothers/search_form.html')
     return redirect('/search/')
+
+@login_required(login_url="brothers.views.login")
+def searchPage(request):
+    if request.method == "GET":
+        q = request.GET.get('q',None)
+        if q:
+            if q == '':
+                return redirect('/fullSearch/')
+            if request.GET.get("type","Search Brothers") == "Scroll":
+                try:
+                    if int(q) <= 0 or int(q) > len(Brother.objects.all())-1:
+                        return redirect('/fullSearch/')
+                    return(redirect('/brothers/'+q))
+                except:
+                        return redirect('/fullSearch/')
+            if request.GET.get("type","Search Brothers") == "Search PC":
+                try:
+                    if int(q) <= 0 or int(q) > Brother.objects.get(id=len(Brother.objects.all())-1).pc:
+                        return redirect('/fullSearch/')
+                    return redirect('/PC/'+q)
+                except:
+                    return redirect('/fullSearch/')
+            else:
+                b1 = Brother.objects.filter(name__icontains=q)
+                b2 = Brother.objects.filter(nickname__icontains=q)
+
+            return render(request, 'brothers/search_form.html',{'b1':b1,'b2':b2})
+        return render(request, 'brothers/searchPage.html')
+    return render(request, 'brothers/searchPage.html')
+
 @login_required(login_url="brothers.views.login")
 def PC(request,pc):
     return render(request, 'brothers/PC.html',{'brothers':Brother.objects.filter(pc=pc),'pc':pc})

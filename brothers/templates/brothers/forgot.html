@@ -5,6 +5,7 @@
 <head>
 	  <meta charset="utf-8" />
 
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
  
   <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
   <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
@@ -49,7 +50,7 @@ input
 </div>
 <div class="ui basic segment" style="top:50px;">
 
-    <div class="ui segment" style="width:500px;">  
+    <div class="ui segment" style="width:100%;">  
         <div class="ui form">
             <form class="ui form" method="post" action="/forgot/">
                 {% csrf_token %}
