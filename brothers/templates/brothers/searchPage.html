@@ -1,0 +1,40 @@
+{%extends 'layout.html'%}
+{%block content%}
+<div class="ui form">
+    <form class="ui form" action="/search/" method="get">
+        <div class="ui input">
+            <input id='q' name="q" type="text" placeholder="Search..."style="position:relative;overflow:auto;width:90%;white-space: nowrap;">
+
+
+            <div class="ui buttons"style="position:relative;overflow:auto;min-width:90%;width:90%;">
+                <button class="ui vertical animated button" type="submit" value="Search Brothers"style="position:relative;overflow:auto;min-width:35%;width:35%;white-space: nowrap;">
+                <div class="visible content">
+                    Search
+                </div>
+                <div class="hidden content">
+                    <i class="search icon"></i>
+                </div>
+                </button>
+                <button class="ui vertical animated button" type="submit" name="type" value="Scroll" style="position:relative;overflow:auto;min-width:39%;width:39%;white-space: nowrap;">
+                <div class="visible content"style="position:relative;overflow:auto;min-width:100%;width:100%;left:-5px;">
+                    Scroll
+                </div>
+                <div class="hidden content"style="">
+                    <i class="user icon"></i>
+                </div>
+                </button>
+
+                <button class="ui vertical animated button" type="submit" name="type" value="Search PC" style="position:relative;overflow:auto;min-width:26%;width:26%;white-space: nowrap;">
+                <div class="visible content">
+                    PC
+                </div>
+                <div class="hidden content">
+                    <i class="users icon"></i>
+                </div>
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+{%endblock%}

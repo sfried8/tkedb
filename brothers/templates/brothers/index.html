@@ -19,7 +19,7 @@
 <body>
     <div class="container" style="position:relative;">
         <div class="container" style="height:90%;">
-            <div class="ui two column page grid" >
+            <div class="ui doubling two column page grid" >
                 <div class="six wide column">
                     <h1 class="ui red header">{{brother.name}}</h1>
                     <p>{{brother.scroll}}</p>
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui segment" style="position:fixed;bottom:0px;">
+        <div class="ui segment" style="float:bottom;">
             {%if request.user.is_superuser%}
             <button class="ui button" type="button" onClick="window.location='/brothers/{{brother.scroll}}/edit/' ">
             Edit
@@ -87,8 +87,8 @@
             {%endif%}
             <p>See missing/wrong info?</p>
             <button id="issueButton" class="ui vertical animated button">
-            <div class="visible content">Contact the histor</div>
-            <div class="hidden content"><i class="mail icon"></i></div>
+            Contact the histor<i class="mail icon"></i>
+            
             </button>
         </div>
         <div class="ui modal" id="contactForm">
