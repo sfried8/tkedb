@@ -20,11 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '1z&8+$+ep32nu(e0lxru!5)ww#nc2(&pzzn*8m$g62@92^&^qw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+TEMPLATE_DEBUG = False
+ALLOWED_HOSTS = ['sfried8.pythonanywhere.com']
 
 
 # Application definition

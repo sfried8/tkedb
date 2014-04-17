@@ -6,13 +6,13 @@
                                 $(document).ready(function() {
                                 $('#contactForm')
                                     .modal("attach events","#issueButton","show")
-                                    
+
                                     if ("{{errors}}")
                                     {
                                     $('#contactForm')
                                     .modal('show');
                                     }
-                                
+
                                 });
     </script>
 </head>
@@ -85,7 +85,7 @@
             Edit
             </button>
             {%endif%}
-            <p>Want me to add missing information or correct a mistake? Click below to send me a message.</p>
+            <p>See missing/wrong info?</p>
             <button id="issueButton" class="ui vertical animated button">
             <div class="visible content">Contact the histor</div>
             <div class="hidden content"><i class="mail icon"></i></div>
