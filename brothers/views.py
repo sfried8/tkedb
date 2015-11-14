@@ -151,13 +151,13 @@ def message(request):
             mess = ""
             if not request.user.is_authenticated() and not request.user.is_active:
                 form = MessageEmailForm(request.POST)
-                if form.is_valid():                
+                if form.is_valid():
                     eadd = request.POST['email']
                     mess += "Sent: "+strftime("%m/%d/%y at %H:%M:%S",localtime())+"\n\""+request.POST.get('message')+"\"\nReturn Address: "+eadd
                     send_mail("TKE DB KEY REQUEST",mess,"from",['sfried8@gmail.com'],fail_silently=False)
                     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
                 else:
-                    return TemplateResponse(request,'brothers/register.html',{'messForm':form,'form':UserForm(),'errors':True})                 
+                    return TemplateResponse(request,'brothers/register.html',{'messForm':form,'form':UserForm(),'errors':True})
             else:
                 form = MessageForm(request.POST)
                 if form.is_valid():
@@ -165,7 +165,7 @@ def message(request):
                     send_mail("TKE DB ISSUE",mess,"from",['sfried8@gmail.com'],fail_silently=False)
                     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
                 else:
-                    return render(request,'brothers/home.html',{'form':form,'errors':True,'user':request.user.first_name}) 
+                    return render(request,'brothers/home.html',{'form':form,'errors':True,'user':request.user.first_name})
         else:
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     return redirect('/')
@@ -187,6 +187,8 @@ def search(request):
                         return redirect('/search/')
             if request.GET.get("type","Search Brothers") == "Search PC":
                 try:
+                    if q[:2] in ["ZT","zt","Zt","zT"]:
+                        return redirect('/PC/ZT'+q[2:])
                     if int(q) <= 0 or int(q) > Brother.objects.get(id=len(Brother.objects.all())-1).pc:
                         return redirect('/search/')
                     return redirect('/PC/'+q)
@@ -277,7 +279,7 @@ def findLargestPC():
                 top[b.pc-1] = [b.pc,1]
             else:
                 top[b.pc-1][1] += 1
-    return sorted(top, key=lambda pc: pc[1])[-1] 
+    return sorted(top, key=lambda pc: pc[1])[-1]
 def longestNickname():
     b = Brother.objects.all()
     b2=[]
@@ -301,4 +303,4 @@ def facts(request):
     largestPC=findLargestPC()
     return render(request, 'brothers/stats.html',{'biggestGap':biggestGap[0],'biggestGapNum':biggestGap[1],'mostLittles':mostLittles[0],'mostLittlesNum':mostLittles[1],'largestPC':largestPC[0],'largestPCNum':largestPC[1]})
 
-            
+

@@ -6,19 +6,19 @@
         $(document).ready(function() {
         $('#contactForm')
             .modal("attach events","#issueButton","show")
-            
+
             if ("{{errors}}")
             {
             $('#contactForm')
             .modal('show');
             }
-        
+
         });
     </script>
 </head>
 <div class="ui message" style="max-width:650px;width=100%;margin:0 auto;">
     <h1 class="ui huge center aligned header">Tau Kappa Epsilon Xi-Upsilon Scroll</h1>
-    <p style="align:center;">Welcome, {{user}}! Search the database for any brothers by their full name OR nickname. Alternatively, enter a number and click Scroll to be linked to that scroll number brother's page or click PC to be linked to a list of brothers in that PC. Some pages have missing information; it is possible that this information is actually not in our records, or it simply hasn't been entered yet. Either way, I need your help! If you notice incorrect information or you have something that you want me to add, click this button or the button on that brother's page to send me a message. I'll tend to it ASAP.</p>
+    <p style="align:center;">Welcome, {{user}}! Search the database for any brothers by their full name OR nickname. Alternatively, enter a number and click Scroll to be linked to that scroll number brother's page or click PC to be linked to a list of brothers in that PC. <br/>Note: After going through our records, I've found that there is a lot of missing (and sometimes conflicting) information. If you notice incorrect information or you have something that you want me to add, click this button or the button on that brother's page to send me a message. I'll tend to it ASAP.</p>
     <button id="issueButton" class="ui button">
     Contact the histor <i class="mail icon"></i>
     </button>

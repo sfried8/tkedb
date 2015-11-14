@@ -20,8 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '1z&8+$+ep32nu(e0lxru!5)ww#nc2(&pzzn*8m$g62@92^&^qw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = ['sfried8.pythonanywhere.com']
 
 
@@ -76,7 +76,7 @@ USE_TZ = True
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'tkexiuhistor@gmail.com'
-EMAIL_HOST_PASSWORD = 'histor123'
+EMAIL_HOST_PASSWORD = 'BLZPwi43pqc'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

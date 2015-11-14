@@ -1,6 +1,6 @@
 {%extends 'layout.html'%}
 {%block content%}
-     
+
 <title>Scroll - TKE Scroll</title>
 <h1 class="header">Scroll</h1>
 
@@ -13,11 +13,15 @@
     	{{b.scroll}}. {{b.name}}
   	</div>
   	<div class="content">
-  		
+
 
 
   		<p>
-    {%if b.pc != -1%}
+  	{%if b.pc == -999%}
+  	Zeta Tau Founder
+    {%elif b.pc < 0%}
+    Zeta Tau PC {{b.pc|cut:"-"}}
+    {%elif b.pc > 0%}
 					PC {{b.pc}}
 					{%else%}
 					PC Unknown
@@ -32,8 +36,6 @@
 		<p>
 					{%if b.big != "Unknown"%}
 					Big: {{b.big}}
-					{%else%}
-					Big Unknown
 					{%endif%}
 		</p>
 		<input class="ui button" type="button" value="View Full Page" onClick="window.location='{%url 'detail' b.scroll%}' "/>

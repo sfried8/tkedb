@@ -23,13 +23,22 @@
                 <div class="six wide column">
                     <h1 class="ui red header">{{brother.name}}</h1>
                     <p>{{brother.scroll}}</p>
-                    {% if brother.pc != -1%}
-                    <p>PC {{brother.pc}}</p>
+                    {% if brother.pc > 0%}
+                    <p><a href="/PC/{{brother.pc}}/">PC {{brother.pc}}</a></p>
+                    {%elif brother.pc == -999%}
+                    <p>Zeta Tau Founder</p>
+                    {%elif brother.pc < 0%}
+                    <p>Zeta Tau PC {{brother.pc|cut:"-"}}</p>
                     {%else%}
                     <p>Unknown PC</p>
                     {%endif%}
+                    {%if brother.nickname != "Unknown" %}
                     <p>{{brother.nickname}}</p>
+                    {%endif%}
+                    {%if brother.big != "Unknown"%}
                     <a href="{% url 'detail' brother.bigS%}">{{brother.big}}</a>
+                    {%endif%}
+                    <br/>
                     {%if littles%}
                     <h4>Littles:</h4>
                     <ul>
@@ -38,9 +47,39 @@
                         {%endfor%}
                     </ul>
                     {%endif%}
+
+                    {%if brother.active%}
+                    <p>Currently Active</p>
+                    {%endif%}
+                    <br/>
+                    {%if brother.curPos == "Pry" %}
+                    <img src="{{STATIC_URL}}images/prytanis.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Epi" %}
+                    <img src="{{STATIC_URL}}images/epiprytanis.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Gra" %}
+                    <img src="{{STATIC_URL}}images/grammateus.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Cry" %}
+                    <img src="{{STATIC_URL}}images/crysophylos.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "His" %}
+                    <img src="{{STATIC_URL}}images/histor.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Heg" %}
+                    <img src="{{STATIC_URL}}images/hegemon.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Hyp" %}
+                    <img src="{{STATIC_URL}}images/hypophetes.png" style="margin:0 auto;" />
+                    {%endif%}
+                    {%if brother.curPos == "Pyl" %}
+                    <img src="{{STATIC_URL}}images/pylortes.png" style="margin:0 auto;" />
+                    {%endif%}
+
                     <div class="2 fluid ui buttons" style="padding-top:10px;">
                         {%if brother.scroll == 1%}
-                        <input class="ui disabled button" type="button" value="View Prev in Scroll"/>
+                        <input class="ui disabled button" type="button" value="Previous"/>
                         {%else%}
                         <button class="ui left animated button" type="button" onClick="window.location='/brothers/{{brother.scroll|add:-1}}/' ">
                         <div class="visible content">Previous</div>
@@ -48,7 +87,7 @@
                         </button>
                         {%endif%}
                         {%if brother.scroll == lastScroll%}
-                        <input class="ui disabled button" type="button" value="View Next in Scroll"/>
+                        <input class="ui disabled button" type="button" value="Next"/>
                         {%else%}
                         <button class="ui right animated button" type="button" onClick="window.location='/brothers/{{brother.scroll|add:1}}/' ">
                         <div class="visible content">Next</div>
@@ -58,7 +97,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    {%if brother.big != "Unknown"%}
+                    {%if tree|length >= 3%}
                     <div class="ui accordion">
                         <div class="title">
                             <i class="dropdown icon"></i>
@@ -88,7 +127,7 @@
             <p>See missing/wrong info?</p>
             <button id="issueButton" class="ui vertical animated button">
             Contact the histor<i class="mail icon"></i>
-            
+
             </button>
         </div>
         <div class="ui modal" id="contactForm">

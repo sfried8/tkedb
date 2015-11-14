@@ -1,17 +1,17 @@
 {%load staticfiles%}
-      
+
 <!DOCTYPE HTML>
-<html>        
+<html>
 <head>
 	  <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
- 
+
   <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
   <link href="{% static 'css/semantic.css' %}" rel="stylesheet" type="text/css" />
- 
+
   <style type="text/css">
- @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); } 
-  @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); } 
+ @font-face { font-family: Ubuntu-B; src: url("{%static 'fonts/Ubuntu-B.ttf'%}"); }
+  @font-face { font-family: Ubuntu-L; src: url("{%static 'fonts/Ubuntu-L.ttf'%}"); }
  h1 {
 font-family: Ubuntu-B
 }
@@ -48,7 +48,7 @@ input
       $(document).ready(function() {
         $('#contactForm')
         .modal("attach events","#contactButton","show")
-        
+
         if ("{{errors}}")
         {
         $('#contactForm')
@@ -60,7 +60,7 @@ input
         .accordion();
       });
       </script>
- 
+
     <title>Register - TKE Scroll</title>
 </head>
 
@@ -79,7 +79,7 @@ input
     </div>
 <div class="ui basic segment" style="top:50px;">
 
-    <div class="ui segment">  
+    <div class="ui segment">
         <div class="ui form">
             <form class="ui form" method="post" action="/register/">
                 {% csrf_token %}
@@ -147,20 +147,20 @@ input
                     </div>
                     {%endif%}
                 </div>
-               
+
                 </div>
 
                 <button class="ui vertical animated button" type="submit" name="Submit">
                     Submit
                 </button>
             </form>
-            </div>  
+            </div>
             <div class="ui modal" id="contactForm">
                 <i class="close icon"></i>
                 <div class="header">
                     Contact the Histor
                 </div>
-                              
+
                 <div class="ui form">
                     <form class="ui form" method="post" action="/message/">
                         {%csrf_token%}
@@ -189,8 +189,9 @@ input
                     </form>
                 </div>
             </div>
-          
+
     </div>
+    Need the auth key?
      <button id="contactButton" class="ui button">Contact the Histor</button>
 </div>
 </body>
