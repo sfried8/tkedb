@@ -52,29 +52,8 @@
                     <p>Currently Active</p>
                     {%endif%}
                     <br/>
-                    {%if brother.curPos == "Pry" %}
-                    <img src="{{STATIC_URL}}images/prytanis.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Epi" %}
-                    <img src="{{STATIC_URL}}images/epiprytanis.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Gra" %}
-                    <img src="{{STATIC_URL}}images/grammateus.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Cry" %}
-                    <img src="{{STATIC_URL}}images/crysophylos.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "His" %}
-                    <img src="{{STATIC_URL}}images/histor.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Heg" %}
-                    <img src="{{STATIC_URL}}images/hegemon.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Hyp" %}
-                    <img src="{{STATIC_URL}}images/hypophetes.png" style="margin:0 auto;" />
-                    {%endif%}
-                    {%if brother.curPos == "Pyl" %}
-                    <img src="{{STATIC_URL}}images/pylortes.png" style="margin:0 auto;" />
+                    {%if officer%}
+                    <img src="{{STATIC_URL}}images/{{officer.jewel_image}}" style="margin:0 auto;" />
                     {%endif%}
 
                     <div class="2 fluid ui buttons" style="padding-top:10px;">

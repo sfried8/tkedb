@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.template.response import TemplateResponse
 from django.db.models import Max
-from brothers.models import Brother
+from brothers.models import Brother, Officer
 from django.contrib.auth.models import User as DJuser
 from django.contrib.auth import authenticate, login as DJlogin, logout as DJlogout
 from django.contrib.auth.decorators import login_required
@@ -30,7 +30,12 @@ def index(request):
 @login_required(login_url="brothers.views.login")
 def detail(request, scroll):
     b = Brother.objects.get(scroll=scroll)
-    return render(request, 'brothers/index.html',{'brother':b,'littles':Brother.objects.filter(bigS=b.scroll),'lastScroll':Brother.objects.all().aggregate(Max('scroll'))['scroll__max'],'tree':getTree(b.scroll),'form':MessageForm()})
+    officerList = Officer.objects.filter(current=b)
+    if len(officerList) == 0:
+        officer = None
+    else:
+        officer = officerList[0]
+    return render(request, 'brothers/index.html',{'brother':b,'littles':Brother.objects.filter(bigS=b.scroll),'lastScroll':Brother.objects.all().aggregate(Max('scroll'))['scroll__max'],'tree':getTree(b.scroll),'form':MessageForm(),'officer':officer})
 
 def editBrother(request,scroll):
     if not request.user.is_superuser:

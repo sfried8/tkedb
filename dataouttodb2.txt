@@ -1,0 +1,671 @@
+1%-999%Bartle%Taylor%Bartle Gleason Taylor%Unknown%Unknown%0
+2%-999%Herbert%Grabb%Herbert H. Grabb%Herbie%Unknown%0
+3%-999%Douglas%Dychko%Douglas J. Dychko%Unknown%Unknown%0
+4%0%George%Mitten%George T. Mitten%Unknown%Bartle Gleason Taylor%1
+5%-4%John%Mahaffey%John H. Mahaffey, Jr.%Unknown%Michael J. Baker%58
+6%-3%Douglas%Miller%Douglas D. Miller%Unknown%Michael J. Baker%58
+7%-3%Gregory%Appel%Gregory V. Appel%Unknown%Michael J. Favoretto%60
+8%0%Robert%Dunne%Robert S. Dunne%Unknown%Unknown%0
+9%-3%Guy%Guissanie%Guy W. Guissanie%Unknown%Herbert H. Grabb%2
+10%-4%William%Badge%William C. Badge%Unknown%Dominick Gasbarre, Jr.%11
+11%-3%Dominick%Gasbarre%Dominick Gasbarre, Jr.%Unknown%Bartle Gleason Taylor%1
+12%0%Robert%Ellis%Robert R. Ellis%Unknown%William C. Badge%10
+13%-1%Stephen%Miller%Stephen J. Miller%Unknown%Unknown%0
+14%-3%James%Compton%James D. Compton%Unknown%Stuart Barney, Jr.%49
+15%-3%Thomas%Smith%Thomas W. Smith%Unknown%George T. Mitten%4
+16%-3%Arthur%Puskas%Arthur Puskas%Unknown%Unknown%0
+17%-1%Steven%Benton%Steven R. Benton%Unknown%Unknown%0
+18%-1%Jeffrey%Reynolds%Jeffrey D. Reynolds%Unknown%Unknown%0
+19%-1%John%Nelson%John E. Nelson, III%Unknown%Unknown%0
+20%-3%Charles%Lowe%Charles W. Lowe%Unknown%James R. Behrens%48
+21%-1%Danniel%Hebert%Daniel V. Hebert%Unknown%Unknown%0
+22%0%Richard%Begbie%Richard K. Begbie%Unknown%Unknown%0
+23%0%Thomas%Burke%Thomas M. Burke%Unknown%Douglas J. Dychko%3
+24%-2%Homer%Martin%Homer S. Martin%Unknown%Unknown%0
+25%-1%Philip%Nelson%Philip H. Nelson%Unknown%Unknown%0
+26%-3%Keith%Delano%Keith R. Delano%Unknown%Unknown%0
+27%-4%Sam%Strahan%Sam Strahan%Unknown%Unknown%0
+28%-3%James%Freitag%James M. Freitag%Unknown%Unknown%0
+29%-1%Edwin%Lore%Edwin Lore%Unknown%Unknown%0
+30%2%Ronald%Evangelista%Ronald M. Evangelista%Unknown%Bartle Gleason Taylor%1
+31%2%John%Potts%John M. Potts%Unknown%Unknown%0
+32%2%Roy%Wilson%Roy K. Wilson%Unknown%Douglas D. Miller%6
+33%2%Andrew%Weiss%Andrew G. Weiss%Unknown%Guy W. Guissanie%9
+34%2%Michael%Carr%Michael V. Carr, III%Unknown%Robert W. Zercie%51
+35%2%John%McManus%John B. McManus%Unknown%Stuart Barney, Jr.%49
+36%2%Wade%Winter%Wade W. Winter%Unknown%James R. Behrens%48
+37%2%Peter%Finke%Peter Finke%Unknown%Charles W. Loew%20
+38%2%Christopher%Brandin%Christopher Brandin%Unknown%John H. Mahaffey, Jr.%5
+39%2%Charles%Clemmer%Charles L. Clemmer%Unknown%Keith R. Delano%26
+40%2%Robert%McCrindle%Robert I. McCrindle, Jr.%Unknown%Unknown%0
+41%2%Thomas%Dietz%Thomas E. Dietz%Unknown%Unknown%0
+42%2%Stephen%Gloo%Stephen D. Gloo%Unknown%Dominick Gasbarre, Jr.%11
+43%2%Richard%Hradsky%Richard C. Hradsky%Unknown%Unknown%0
+44%2%Douglas%Keuther%Douglas Keuther%Unknown%William C. Badge%10
+45%2%Noel%Blatt%Noel F. Blatt%Unknown%Steven R. Benton%17
+46%2%Samuel%Radziviliuk%Samuel J. Radziviliuk, II%Unknown%Unknown%0
+47%-1%Robert%Brunea%Robert W. Brunea%Unknown%Unknown%0
+48%-1%James%Behrens%James R. Behrens%Unknown%Gregory V. Appel%7
+49%-1%Stuart%Barney%Stuart Barney, Jr.%Unknown%Gregory V. Appel%7
+50%-1%Richard%Bell%Richard D. Bell%Unknown%Unknown%0
+51%0%Robert%Zercie%Robert W. Zercie%Unknown%Steven R. Benton%17
+52%-1%John%Boyle%John R. Boyle%Unknown%Unknown%0
+53%0%Stephen%Murdock%Stephen R. Murdock%Unknown%Michael V. Carr, III%34
+54%0%Adonis%Burris%Adonis C. Burris%Unknown%Gregory V. Appel%7
+55%-1%Thomas%Mergler%Thomas R. Mergler%Unknown%Unknown%0
+56%0%Louis%Rotundo%Louis Rotundo%Unknown%Unknown%0
+57%-1%George%Behrens%George W. Behrens%Unknown%Unknown%0
+58%-1%Michael%Baker%Michael J. Baker%Unknown%Unknown%0
+59%0%Robert%Hathorn%Robert Hathorn%Unknown%Unknown%0
+60%-1%Michael%Favoretto%Michael J. Favoretto%Unknown%Unknown%0
+61%-1%Russell%Martens%Russell Martens%Unknown%Unknown%0
+62%4%Harold%Schmidt%Harold S. Schmidt%Unknown%John H. Mahaffey, Jr.%5
+63%4%Philip%Whitebay%Philip J. Whitebay%Unknown%Stephen D. Gloo%42
+64%5%Lester%Battist%Lester E. Battist%Unknown%Dominick Gasbarre, Jr.%11
+65%5%Bruce%Byers%Bruce N. Byers%Unknown%Stephen R. Murdock%53
+66%5%Daniel%Carmin%Daniel R. Carmin%Unknown%John B. McManus%35
+67%5%Eric%Schwartz%Eric D. Schwartz%Unknown%Harold S. Schmidt%62
+68%5%John%Stanton%John A. Stanton%Unknown%Gregory V. Appel%7
+69%5%Wayne%Zimmer%Wayne C. Zimmer%Unknown%James D. Compton%14
+70%5%Michael%Capozzi%Michael Capozzi%Unknown%Unknown%0
+71%5%Kenneth%Ngoon%Kenneth W. Ngoon%Unknown%Unknown%0
+72%6%Paul%Bidanset%Paul R. Bidanset%Unknown%Guy W. Guissanie%9
+73%6%David%Meislin%David S. Meislin%Unknown%Unknown%0
+74%6%Scott%Perkins%Scott T. Perkins%Unknown%Wayne C. Zimmer%69
+75%6%Patrick%Roche%Patrick Roche%Unknown%Wade W. Winter%36
+76%6%Thomas%Schultz%Thomas L. Schultz%Unknown%Peter Finke%37
+77%6%Jon%Stevens%Jon E. Stevens%Unknown%Philip H. Nelson%25
+78%6%Thomas%Valego%Thomas Valego%TV%John B. McManus%35
+79%7%Everett%Spencer%Everett L. Spencer%Unknown%Guy W. Guissanie%9
+80%7%Jaime%Jackerson%Jaime Jackerson%Unknown%John M. Potts%31
+81%7%Thomas%Lang%Thomas Lang%Unknown%John H. Mahaffey, Jr.%5
+82%7%George%Conlan%George C. Conlan%Unknown%Paul R. Bidanset%72
+83%7%John%Maitner%John Maitner, II%Unknown%Roy K. Wilson%32
+84%7%Vincent%Marini%Vincent E. Marini, Jr.%Unknown%Michael Capozzi%70
+85%7%Peter%Tuttle%Peter B. Tuttle%Unknown%Robert R. Ellis%12
+86%7%Kenneth%Fallon%Kenneth E. Fallon%Unknown%Stephen R. Murdock%53
+87%7%Cornell%Eckhardt%Cornell C. Eckhardt%Unknown%Thomas M. Burke%23
+88%7%Bruce%Campagna%Bruce D. Campagna%Unknown%Lester E. Battist%64
+89%7%Jesse%Pearson%Jesse F. Pearson%Unknown%Thomas Valego%78
+90%0%William%Kalohn%William Kalohn%Unknown%Cornell C. Eckhardt%87
+91%0%Paul%Hubel%Paul Hubel%Unknown%Harold S. Schmidt%62
+92%0%William%Carwile%William J. Carwile%Unknown%Guy W. Guissanie%9
+93%0%James%Candreva%James P. Candreva%Unknown%Bruce D. Campagna%88
+94%8%Dean%Reinmund%Dean P. Reinmund%Unknown%Roy K. Wilson%32
+95%0%Robert%Church%Robert J. Church, II%Unknown%John M. Potts%31
+96%0%Nicholas%Frandino%Nicholas J. Frandino%Unknown%Ronald M. Evangelista%30
+97%0%David%Sheble%David S. Sheble%Unknown%Patrick Roche%75
+98%-1%John%Rawlins%John J. Rawlins%Unknown%Unknown%0
+99%10%Douglas%Dorman%Douglas Dorman%Unknown%William J. Carwile%92
+100%10%Ronald%Palmer%Ronald J. Palmer%Unknown%Harold S. Schmidt%62
+101%10%Matthew%Cohen%Matthew T. Cohen%Unknown%Stephen R. Murdock%53
+102%10%Ralph%Hattenbach%Ralph D. Hattenbach%Unknown%Roy K. Wilson%32
+103%10%Jeffrey%Welch%Jeffrey A. Welch%Unknown%Bruce D. Campagna%88
+104%10%Donald%Dillie%Donald R. Dillie%Buzz%Kenneth E. Fallon%86
+105%11%Mark%Bosworth%Mark V. Bosworth%Unknown%Jon E. Stevens%77
+106%11%Douglas%Cartwright%Douglas P. Cartwright%Unknown%Dean P. Reinmund%94
+107%11%Theodore%Cataldi%Theodore F. Cataldi, Jr.%Unknown%Michael Capozzi%70
+108%11%Richard%Flora%Richard A. Flora%Unknown%John Maitner, II%83
+109%11%Douglas%Garrard%Douglas F. Garrard%Unknown%Charles W. Loew%20
+110%11%Mark%Griswold%Mark H. Griswold%Unknown%Paul R. Bidanset%72
+111%11%Bruce%Keiper%Bruce A. Keiper%Unknown%Thomas Valego%78
+112%11%Stephen%McGowan%Stephen McGowan%Unknown%David S. Sheble%97
+113%11%Boniface%Mikulka%Boniface Mikulka%Unknown%Wayne C. Zimmer%69
+114%11%Steven%Oshry%Steven B. Oshry%Unknown%Matthew T. Cohen%101
+115%11%Michael%Sadowski%Michael E. Sadowski%Unknown%Ralph Hattenbach%102
+116%11%Leo%Tydings%Leo F. Tydings%Kojack%Dominick Gasbarre, Jr.%11
+117%12%Michael%Bauman%Michael R. Bauman%Unknown%Stephen R. Murdock%53
+118%12%Brian%Buckenmeyer%Brian F. Buckenmeyer%Unknown%Ronald J. Palmer%100
+119%12%David%Marks%David E. Marks%Unknown%Charles W. Loew%20
+120%12%Joseph%Schimizzi%Joseph M. Schimizzi%Unknown%Matthew T. Cohen%101
+121%12%George%Seary%George E. Seary%Unknown%Peter B. Tuttle%85
+122%12%Richard%Stamp%Richard Stamp%Unknown%James P. Candreva%93
+123%13%John%Shannon%John J. Shannon%Unknown%Donald R. Dillie%104
+124%14%William%Allen%William H. Allen, Jr.%Unknown%Nicholas J. Frandino%96
+125%14%Michael%Kuzma%Michael R. Kuzma%Unknown%John A. Stanton%68
+126%14%Mark%Muthig%Mark J. Muthig%Unknown%Michael R. Bauman%117
+127%14%R. Thomas%Sellman%R. Thomas Sellman%Unknown%David S. Sheble%97
+128%14%R. Michael%Semple%R. Michael Semple%Unknown%Mark V. Bosworth%105
+129%14%Lee%Steigerwald%Lee W. Steigerwald%Unknown%Scott T. Perkins%74
+130%14%Mark%Sundberg%Mark K. Sundberg%Unknown%Ronald J. Palmer%100
+131%14%Christopher%Tobin%Christopher R. Tobin%Unknown%Richard A. Flora%108
+132%14%Howard%Wallach%Howard P. Wallach%Unknown%Joseph M. Schimizzi%120
+133%15%Daniel%Cabour%Daniel Cabour%Unknown%David E. Marks%119
+134%15%Wayne%Smolinski%Wayne Smolinski%Unknown%Kenneth E. Fallon%86
+135%15%Edward%Watters%Edward G. Watters%Unknown%Ralph Hattenbach%102
+136%15%Timothy%Waters%Timothy R. Waters%Unknown%Patrick Roche%75
+137%15%Stuart%Holcombe%Stuart J. Holcombe%Unknown%Unknown%0
+138%16%Gregory%Beckerink%Gregory D. Beckerink%Unknown%John J. Shannon%123
+139%16%David%Byers%David J. Byers%Unknown%Brian F. Buckenmeyer%118
+140%16%Philip%DiOrio%Philip A. DiOrio%Unknown%Matthew T. Cohen%101
+141%16%Vincent%Frandino%Vincent F. Frandino, Jr.%Unknown%Wayne Smolinski%134
+142%16%Marc%Goodman%Marc Goodman%Unknown%Mark K. Sundberg%130
+143%16%Joseph%Guttman%Joseph E. Gutterman%Unknown%Unknown%0
+144%16%Jeffrey%Heck%Jeffrey A. Heck%Unknown%Peter B. Tuttle%85
+145%16%L. Michael%Reichel%L. Michael Reichel%Rike%Edward G. Watters%135
+146%16%William%Keegan%William J. Keegan%Unknown%Chris R. Tobin%131
+147%16%Robert%Kubis%Robert Kubis%Unknown%Mark V. Bosworth%105
+148%16%Thomas%Leahy%Thomas C. Leahy%Unknown%Stuart J. Holcombe%137
+149%16%Daniel%Monaghan%Daniel A. Monaghan%Unknown%David S. Sheble%97
+150%16%Michael%Morris%Michael D. Morris%Unknown%David E. Marks%119
+151%16%Richard%Olm%Richard E. Olm%Unknown%Michael R. Kuzma%125
+152%16%Joseph%Randazzo%Joseph Randazzo%Unknown%Jon E. Stevens%77
+153%16%Dale%Richter%Dale F. Richter%Unknown%Steven Oshry%114
+154%16%Paul%Rienth%Paul H. Rienth%Unknown%Joseph M. Schimizzi%120
+155%16%Terry%Sabransky%Terry Sabransky%Unknown%Dean P. Reinmund%94
+156%16%Douglas%Schultheis%Douglas A. Schultheis%Unknown%Lee W. Steigerwald%129
+157%16%James%Southwell%James D. Southwell%Unknown%Unknown%0
+158%16%Barry%Stephens%Barry D. Stephens%Unknown%Daniel Cabour%133
+159%16%Andrew%Talcott%Andrew R. Talcott%Unknown%Howard Wallach%132
+160%16%Craig%Urciuoli%Craig V. Urciuoli%Unknown%Richard Stamp%122
+161%17%Craig%Alford%Craig P. Alford%Unknown%Michael R. Bauman%117
+162%18%Daniel%Adams%Daniel F. Adams%Unknown%Wayne Smolinski%134
+163%18%Michael%Belz%Michael J. Belz%Unknown%Joseph E. Gutterman%143
+164%18%Mark%Bourgea%Mark Bourgea%Unknown%Marc Goodman%142
+165%18%Gregory%Coffey%Gregory J. Coffey%Unknown%Stuart J. Holcombe%137
+166%18%Mark%Dunn%Mark E. Dunn%Unknown%Howard Wallach%132
+167%18%Stephen%Fletcher%Stephen J. Fletcher%Unknown%Mark J. Muthig%126
+168%18%Jeffrey%Gurney%Jeffrey B. Gurney%Unknown%Gregory D. Beckerink%138
+169%18%Joel%Kramer%Joel R. Kramer%Unknown%Philip A. DiOrio%140
+170%18%Howard%Kurdin%Howard Kurdin%Unknown%Paul H. Rienth%154
+171%18%Patrick%Landers%Patrick E. Landers%Unknown%Joseph M. Schimizzi%120
+172%18%Christopher%Miller%Christopher M. Miller%Unknown%Steven Oshry%114
+173%18%Frederick%Pow%Frederick C. Pow, II%Unknown%Douglas F. Garrard%109
+174%18%Joseph%Powell%Joseph M. Powell%Unknown%William J. Keegan%146
+175%18%Gary%Roshak%Gary A. Roshak%Unknown%R. Thomas Sellman%127
+176%18%David%Schleider%David M. Schleider%Unknown%L Michael Reichel%145
+177%18%Alfred%Wagner%Alfred C. Wagner%Unknown%Chris R. Tobin%131
+178%18%William%Whitney%William S. Whitney%Unknown%Joseph Randazzo%152
+179%19%Martin%Gira%Martin G. Gira, II%Unknown%Howard Kurdin%170
+180%19%Christopher%Hermanson%Christopher J. Hermanson%Unknown%Joseph M. Powell%174
+181%19%James%Porto%James D. Porto%Unknown%Craig V. Urciuoli%160
+182%20%Brian%Connolly%Brian J. Connolly%Unknown%Brian F. Buckenmeyer%118
+183%20%Timothy%Fletcher%Timothy Fletcher%Unknown%Christopher Hermanson%180
+184%20%Eliot%Hermanson%Eliot J. Hermanson%Unknown%Steven Oshry%114
+185%20%Shawn%Olsen%Shawn K. Olsen%Unknown%Mark J. Muthig%126
+186%20%John%Thurber%John P. Thurber%Unknown%Michael R. Bauman%117
+187%21%Robert%Bucher%Robert J. Bucher, Jr.%Unknown%Joseph M. Powell%174
+188%21%Christopher%Buendo%Christopher M. Buendo%Unknown%Mark E. Dunn%166
+189%21%Douglas%Corrigan%Douglas Corrigan%Unknown%Brian J. Connolly%182
+190%21%Jeff%Hehn%Jeff Hehn%Unknown%Christopher Hermanson%180
+191%21%Craig%Jeffrey%Craig S. Jeffrey%Unknown%Jeffrey B. Gurney%168
+192%21%Drew%Kuimjian%Drew Kuimjian%Unknown%Gregory J. Coffey%165
+193%21%Kurt%Leunis%Kurt Leunis%Unknown%L. Michael Reichel%145
+194%21%Bradley%Moore%Bradley A. Moore%Unknown%Philip A. DiOrio%140
+195%21%Mark%Pincince%Mark A. Pincince%Unknown%James D. Porto%181
+196%21%Sanford%Savitz%Sanford Savitz%Unknown%Wayne Smolinski%134
+197%21%Jay%Yung%Jay D. Yung%Unknown%Paul H. Rienth%154
+198%22%George%Crimmins%George F. Crimmins, III%Unknown%Bob Bucher%187
+199%22%David%Hurwitz%David R. Hurwitz%Unknown%Howard Kurdin%170
+200%22%David%Marshall%David B. Marshall%Unknown%Martin Gira, II%179
+201%22%Terry%Pow%Terry Pow%Unknown%Timothy Fletcher%183
+202%22%Barry%Wilde%Barry Wilde%Unknown%Joel Kramer%169
+203%23%Robert%Baker%Robert D. Baker%Unknown%Mark A. Pincince%195
+204%23%Daniel%Clingan%Daniel Clingan%Unknown%Martin Gira, II%179
+205%23%Steven%Cornell%Steven M. Cornell%Unknown%Douglas Corrigan%189
+206%24%Paul%Barbey%Paul R. Barbey%Unknown%Mark A. Pincince%195
+207%24%Michael%Chaladoff%Michael A. Chaladoff%Unknown%Martin Gira II%179
+208%24%Peter%Keehnle%Peter J. Keehnle%Unknown%Christopher M. Buendo%188
+209%24%Martin%Kramer%Martin M. Kramer%Unknown%Kurt Leunis%193
+210%24%Neil%Markey%Neil J. Markey%Unknown%Dale F. Richter%153
+211%24%Neil%McLaughlin%Neil P. McLaughlin%Unknown%Sanford Savitz%196
+212%24%Alan%Milot%Alan S. Milot%Unknown%Steven M. Cornell%205
+213%24%James%Morton%James C. Morton%Unknown%Paul H. Rienth%154
+214%24%Robert%Perini%Robert G. Perini%Unknown%Craig S. Jeffrey%191
+215%24%Michael%Pinkowski%Michael A. Pinkowski%Unknown%Robert J. Bucher, Jr.%187
+216%24%Eric%Richards%Eric J. Richards%Unknown%Jeff Hehn%190
+217%24%David%Ross%David N. Ross%Unknown%Michael J. Belz%163
+218%24%Matthew%Truex%Matthew L. Truex%Unknown%Steven M. Cornell%205
+219%24%Christopher%White%Christopher K. White%Unknown%Daniel Clingan%204
+220%24%Robert%Wolf%Robert G. Wolf%Unknown%Howard Kurdin%170
+221%25%Joseph%Bealkowski%Joseph V. Bealkowski%Unknown%Unknown%0
+222%25%Marc%Bryan-Brown%Marc Bryan-Brown%Unknown%Eric J. Richards%216
+223%25%Kenneth%Gilloon%Kenneth J. Gilloon%Unknown%Neil P. McLaughlin%211
+224%25%William%Grieco%William M. Grieco%Unknown%David R. Hurwitz%199
+225%25%David%Lloyd%David A. Lloyd%Unknown%Craig S. Jeffrey%191
+226%25%John%Speach%John Speach%Unknown%Unknown%0
+227%25%Edward%Treveiler%Edward P. Treveiler%Unknown%Unknown%0
+228%25%Robert%Zeoli%Robert W. Zeoli%Unknown%James C. Morton%213
+229%25%Jon%Zimmer%Jon W. Zimmer, Jr.%Unknown%Robert G. Perini%214
+230%26%Steven%Cohen%Steven S. Cohen%Unknown%Marc B. Brown%222
+231%26%Allen%Dalton%Allen B. Dalton%Unknown%Unknown%0
+232%26%Bret%Dethlefsen%Bret D. Dethlefsen%Unknown%Brian J. Connolly%182
+233%26%Frank%Germano%Frank Germano%Unknown%Kenneth J. Gilloon%223
+234%26%Jeffrey%Hourihan%Jeffrey S. Hourihan%Unknown%Unknown%0
+235%26%Mark%Lilly%Mark D. Lilly%Unknown%Unknown%0
+236%26%Thomas%Miller%Thomas G. Miller%Unknown%Unknown%0
+237%26%Mark%Randall%Mark J. Randall%Unknown%Unknown%0
+238%26%Eric%Reinitz%Eric Reinitz%Unknown%George F. Crimmins, III%198
+239%27%Ross%Doland%Ross E. Doland%Unknown%Eric Reinitz%238
+240%27%John%Muthig%John J. Muthig%Unknown%Unknown%0
+241%27%Walter%Rapetski%Walter A. Rapetski, Jr.%Unknown%Thomas G. Miller%236
+242%28%David%Hanson%David R. Hanson%Unknown%Joseph V. Bealkowski%221
+243%28%David%Mahiques%David W. Mahiques%Unknown%Jon W. Zimmer, Jr.%229
+244%28%Bryan%Newman%Bryan S. Newman%Unknown%Christopher M. Buendo%188
+245%28%David%Redline%David C. Redline%Unknown%Philip A. Di Orio%140
+246%29%Christopher%Cegelski%Christopher Cegelski%Unknown%David R. Hanson%242
+247%29%Jeffrey%Harrow%Jeffrey J. Harrow%Unknown%Unknown%0
+248%29%Jeffrey%Speach%Jeffrey T. Speach%Unknown%Unknown%0
+249%29%David%Wolf%David A. Wolf%Unknown%Craig S. Jeffrey%191
+250%30%Robert%Cohen%Robert J. Cohen%Unknown%Unknown%0
+251%30%Frank%Guida%Frank C. Guida, Jr.%Unknown%David A. Lloyd%225
+252%30%Charles%Hawkins%Charles J. Hawkins%Unknown%Unknown%0
+253%30%Michael%Hughes%Michael P. Hughes%Unknown%Peter J. Keehnle%208
+254%30%Mark%Richards%Mark D. Richards%Unknown%Edward P. Treveiler%227
+255%30%Richard%Wager%Richard M. Wager%Unknown%Robert G. Wolf%220
+256%31%James%Carusone%James Carusone%Unknown%Unknown%0
+257%31%Robert%Martin%Robert B. Martin%Unknown%Unknown%0
+258%31%Steve%Misturini%Steve Misturini%Unknown%Unknown%0
+259%31%Angelo%Quagliata%Angelo F. Quagliata%Unknown%Richard M. Wager%255
+260%32%Winfield%Austin%Winfield C. Austin%Unknown%Unknown%0
+261%32%Corey%Blackwell%Corey Blackwell%Unknown%Robert G. Perini%214
+262%32%Norman%Delph%Norman Delph%Unknown%Mark Richards%254
+263%32%Andrew%Pearson%Andrew Pearson%Unknown%Unknown%0
+264%32%H. Taylor%Zimmer%H. Taylor Zimmer, III%Unknown%Jon W. Zimmer, Jr.%229
+265%33%Bill%Amstutz%Bill Amstutz%Unknown%Richard M. Wager%255
+266%33%Richard%Bonaker%Richard A. Bonaker%Unknown%Robert G. Wolf%220
+267%33%Matthew%Cole%Matthew B. Cole%Unknown%Corey Blackwell%261
+268%33%Scott%Dahl%Scott Dahl%Unknown%H. Taylor Zimmer, III%264
+269%33%Darryl%DeWolff%Darryl DeWolff%Unknown%Unknown%0
+270%33%Joseph%Frissora%Joseph R. Frissora, Jr.%Unknown%Jon W. Zimmer, Jr.%229
+271%33%Michael%Kerwin%Michael J. Kerwin%Unknown%Unknown%0
+272%33%Christopher%Kycia%Christopher Kycia%Unknown%Peter J. Keehnle%208
+273%33%Paul%Luczak%Paul M. Luczak%Unknown%Bret D. Dethlefsen%232
+274%33%Charles%Rakstis%Charles Rakstis%Unknown%Thomas G. Miller%236
+275%33%Thomas%Roelli%Thomas M. Roelli%Unknown%Unknown%0
+276%33%Robert%Southwell%Robert A. Southwell%Unknown%Ross E. Doland%239
+277%33%Christopher%Stevens%Christopher B. Stevens%Unknown%David Ross%217
+278%33%Robert%Torgalski%Robert I. Torgalski%Unknown%Paul R. Barbey%206
+279%33%Craig%Wicke%Craig E. Wicke%Unknown%Charles J. Hawkins%252
+280%34%Ward%Ackerson%Ward Ackerson%Unknown%Bill Amstutz%265
+281%34%Alan%Byrne%Alan T. Byrne%Unknown%David Ross%217
+282%34%Christopher%Robson%Christopher Robson%Unknown%Jon W. Zimmer, Jr.%229
+283%34%Darren%Simon%Darren M. Simmon%Unknown%Unknown%0
+284%34%Michael%Sturge%Michael Sturge%Unknown%Angelo F. Quagliata%259
+285%34%Tan%Tran%Tan Tran%Unknown%Paul M. Luczak%273
+286%34%Thomas%Willson%Thomas Willson%Unknown%Andrew Pearson%263
+287%35%Willam%Anslow%Willam Anslow%Unknown%Richard M. Wager%255
+288%35%Adrian%Buck%Adrian Buck%Unknown%Unknown%0
+289%35%Scott%Ingwers%Scott M. Ingwers%Unknown%Bret D. Dethlefsen%232
+290%35%Douglas%Kaufman%Douglas M. Kaufman%Unknown%Ward Ackerson%280
+291%36%Eric%Bischof%Eric W. Bischof%Unknown%Ross E. Doland%239
+292%36%Dean%Burrows%Dean Burrows%Unknown%Unknown%0
+293%36%Phillip%Delmont%Phillip Delmont%Unknown%Michael Sturge%284
+294%36%Gene%Flanders%Gene Flanders, Jr.%Unknown%Scott Dahl%268
+295%36%Robert%Lawler%Robert J. Lawler, Jr.%Unknown%Unknown%0
+296%36%Richard%Leach%Richard A. Leach%Unknown%Unknown%0
+297%36%Geoffrey%Lewis%Geoffrey A. Lewis%Unknown%Joseph R. Frissora, Jr.%270
+298%36%George%Mahnke%George C. Mahnke%Unknown%Robert I. Torgalski%278
+299%36%Alan%McConnell%Alan McConnell%Unknown%Robert I. Torgalski%278
+300%36%Joseph%McMahon%Joseph McMahon%Unknown%Frank C. Guida, Jr.%251
+301%36%Michael%Meehan%Michael Meehan%Unknown%Unknown%0
+302%36%Marc%Neuburger%Marc A. Neuburger%Unknown%Matthew B. Cole%267
+303%36%Steve%Picard%Steve Picard%Unknown%Unknown%0
+304%36%Christopher%Tompkins%Christopher Tompkins%Unknown%Unknown%0
+305%36%John%Tworsky%John W. Tworsky%Unknown%Unknown%0
+306%36%Jack%Zolty%Jack Zolty%Unknown%Winfield C. Austin%260
+307%37%John%Assaro%John N. Assaro%Unknown%Steve Misturini%258
+308%37%Thomas%Gyori%Thomas Gyori%Unknown%Unknown%0
+309%38%Kevin%Burd%Kevin Burd%Unknown%John N. Assaro%307
+310%38%Michael%Ingersol%Michael C. Ingersol%Unknown%Eric W. Bischof%291
+311%38%James%Taylor%James Taylor%Unknown%Unknown%0
+312%39%James%Adams%James D. Adams%Rugburn%Scott M. Ingwers%289
+313%39%Patrick%Bastian%Patrick J. Bastian%Unknown%Jack Zolty%306
+314%39%Brian%Bennardo%Brian Bennardo%Unknown%Richard A. Bonaker%266
+315%39%Douglas%Braunstein%Douglas Braunstein%Unknown%Unknown%0
+316%39%Martin%Daly%Martin P. Daly%Unknown%Matthew B. Cole%267
+317%39%James%Evans%James S. Evans%Unknown%Robert I. Torgalski%278
+318%39%Paul%Foster%Paul W. Foster, Jr.%Unknown%Unknown%0
+319%39%Matthew%Gillogly%Matthew Gillogly%Unknown%Unknown%0
+320%39%Joseph%Green%Joseph H. Green%Unknown%Michael J. Kerwin%271
+321%39%David%Haviland%David A. Haviland%Unknown%Bill Amstutz%265
+322%39%Jacob%Herzog%Jacob Herzog, III%Unknown%Unknown%0
+323%39%Christopher%Landauer%Christopher Landauer%Unknown%James Taylor%311
+324%39%Craig%Marcus%Craig Marcus%Unknown%Unknown%0
+325%39%William%Meyerjack%William S. Meyerjack%Unknown%Unknown%0
+326%39%Edward%Morgan%Edward Morgan%Unknown%Kevin Burd%309
+327%39%Paul%Osterhout%Paul B. Osterhout%Unknown%Ward Ackerson%280
+328%39%Eric%Prosswimmer%Eric A. Prosswimmer%Unknown%Joseph R. Frissora, Jr.%270
+329%39%Christopher%Saraceni%Christopher Saraceni%Unknown%Geoffrey A. Lewis%297
+330%39%Steven%Schain%Steven Schain%Unknown%John N. Assaro%307
+331%39%Mark%Smoll%Mark D. Smoll%Unknown%Ward Ackerson%280
+332%39%Paul%Vinges%Paul M. Vinges%Unknown%Phillip Delmont%293
+333%40%Michael%Beygelman%Michael Beygelman%Unknown%Bryan S. Newman%244
+334%40%Thomas%Krug%Thomas E. Krug, Jr.%Unknown%Jacob Herzog, III%322
+335%40%John%McLaughlin%John McLaughlin%Unknown%Willam Anslow%287
+336%40%Daniel%Meegan%Daniel V. Meegan%Unknown%David A. Haviland%321
+337%40%Eric%Newman%Eric Newman%Unknown%Dean Burrows%292
+338%40%David%Oakman%David R. Oakman%Unknown%Brian Bennardo%314
+339%40%David%Pirrung%David Pirrung%Unknown%Unknown%0
+340%40%Michael%Rattinger%Michael J. Rattinger%Unknown%Unknown%0
+341%40%David%Richard%David C. Richard%Unknown%Steven Schain%330
+342%40%Jon%Schloesser%Jon W. Schloesser%Unknown%Unknown%0
+343%40%Eric%Senna%Eric S. Senna%Unknown%Jack Zolty%306
+344%40%Walter%Wong%Walter Wong%Unknown%Eric A. Prosswimmer%328
+345%40%Mark%Zolty%Mark T. Zolty%Unknown%John N. Assaro%307
+346%41%Graham%MacKenzie%Graham S. MacKenzie%Unknown%Paul M. Vinges%332
+347%41%John%Murphy%John Murphy%Unknown%Unknown%0
+348%41%Kenny%Reece%Kenny Reece%Unknown%Eric A. Prosswimmer%328
+349%41%Phu%Tran%Phu Tran%Unknown%Paul M. Luczak%273
+350%42%Ron%Amstutz%Ron Amstutz%Unknown%Christopher B. Stevens%277
+351%42%Robert%Anderson%Robert A. Anderson%Unknown%John McLaughlin%335
+352%42%David%Benz%David Benz%Unknown%Phillip Delmont%293
+353%42%Michael%Colvin%Michael W. Colvin%Unknown%David R. Oakman%338
+354%42%Anthony%Giamis%Anthony M. Giamis%Unknown%Kenny Reece%348
+355%42%William%Hawkins%William G. Hawkins, Jr.%Unknown%Bill Amstutz%265
+356%42%Prince%Knight%Prince M. Knight, III%Unknown%Mark T. Zolty%345
+357%42%Anthony%Lampuri%Anthony J. Lampuri%Unknown%George C. Mahnke%298
+358%42%Vincent%Modarelli%Vincent J. Modarelli%Unknown%Unknown%0
+359%42%Duane%Nelson%Duane B. Nelson%Unknown%Alan T. Byrne%281
+360%42%James%Osterhout%James E. Osterhout%Unknown%Gene Flanders, Jr.%294
+361%42%Christopher%Phillips%Christopher N. Phillips%Unknown%Paul M. Vinges%332
+362%42%Edward%Seyerlein%Edward C. Seyerlein%Unknown%David A. Haviland%321
+363%43%Michael%Bouchard%Michael E. Bouchard%Unknown%Richard A. Leach%296
+364%43%Luke%Leege%Luke Leege%Unknown%George C. Mahnke%298
+365%43%Scott%Martin%Scott Martin%Unknown%Christopher Saraceni%329
+366%43%Zebulon%Robbins%Zebulon Robbins, III%Unknown%Patrick J. Bastian%313
+367%43%Erik%Swanson%Erik D. Swanson%Unknown%Eric A. Prosswimmer%328
+368%44%Brad%Cooper%Brad Cooper%Unknown%Michael Sturge%284
+369%44%Eric%Cwynar%Eric Cwynar%Unknown%Mark T. Zolty%345
+370%44%Douglas%Sheridan%Douglas R. Sheridan%Unknown%Erik D. Swanson%367
+371%45%Brett%Baumeister%Brett Baumeister%Unknown%Unknown%0
+372%45%Eric%Cleary%Eric P. Cleary%Unknown%Anthony M. Giamis%354
+373%45%David%Cole%David A. Cole%Unknown%Robert A. Anderson%351
+374%45%Kevin%Colegrove%Kevin M. Colegrove%Unknown%James E. Osterhout%360
+375%45%Sean%Dooley%Sean P. Dooley%Unknown%Vincent J. Modarelli%358
+376%45%Jon%Gladish%Jon Gladish%Unknown%Ron Amstutz%350
+377%45%Mohammed%Khadir%Mohammed Khadir%Unknown%Edward C. Seyerlein%362
+378%45%Kim%King%Kim A. King%Unknown%David R. Oakman%338
+379%45%K. Michael%O'Rielly%K. Michael O'Rielly%Unknown%Martin P. Daly%316
+380%45%Kevin%O'Shea%Kevin T. O'Shea%Unknown%Kenny Reece%348
+381%45%Stephen%Vukosic%Stephen Vukosic%Poison%Erik D. Swanson%367
+382%46%David%Card%David B. Card%Unknown%Unknown%0
+383%46%Eric%Dees%Eric P. Dees%Unknown%Eric Cwynar%369
+384%46%Vincent%Fatato%Vincent V. Fatato%Unknown%Jon W. Schloesser%342
+385%46%William%Glase%William E. Glase%Unknown%Anthony M. Giamis%354
+386%46%Jesse%Lo Re%Jesse J. Lo Re%Unknown%Paul M. Vinges%332
+387%46%Gregory%Nunez%Gregory A. Nunez%Unknown%Anthony J. Lampuri%357
+388%46%Todd%Richards%Todd S. Richards%Unknown%Edward P. Treveiler%227
+389%46%Thomas%Roman%Thomas W. Roman%Unknown%Kenny Reece%348
+390%46%Robert%Weinman%Robert B. Weinman%Unknown%Unknown%0
+391%47%Paul%Helling%Paul M. Helling%Unknown%Edward C. Seyerlein%362
+392%47%Marc%Hobler%Marc L. Hobler%Unknown%Mark T. Zolty%345
+393%47%Fred%Howell%Fred A. Howell, II%Unknown%Anthony J. Lampuri%357
+394%47%Edmund%Parrott%Edmund B. Parrott%Unknown%Prince M. Knight, III%356
+395%47%Michael%Ranieri%Michael J. Ranieri%Unknown%Kevin T. O'Shea%380
+396%47%Matthew%Reece%Matthew D. Reece%Unknown%James E. Osterhout%360
+397%47%Remo%Strada%Remo J. Strada%Unknown%Douglas R. Sheridan%370
+398%47%Michael%Stark%Michael R. Stark%Unknown%Anthony M. Giamis%354
+399%47%Brian%Walsh%Brian M. Walsh%Unknown%Eric Cwynar%369
+400%48%Thomas%Peragine%Thomas M. Peragine%Unknown%Gregory A. Nunez%387
+401%48%Dino%Pineda%Dino T. Pineda%Unknown%Kevin M. Colegrove%374
+402%48%David%Solecki%David J. Solecki%Unknown%Anthony J. Lampuri%357
+403%48%Ronald%Van Nest%Ronald L. Van Nest, Jr.%Unknown%Robert B. Weinman%390
+404%49%Eric%Burnard%Eric A. Burnard%Unknown%Unknown%0
+405%50%Jeffrey%Becken%Jeffrey K. Becken%Unknown%Mohammed Khadir%377
+406%50%Anthony%Cresho%Anthony Cresho%Unknown%Remo Strada%397
+407%50%Brian%Daley%Brian G. Daley%Unknown%Edward C. Seyerlein%362
+408%50%John%Fredette%John F. Fredette%Unknown%Vincent V. Fatato%384
+409%50%Daniel%Gold%Daniel Gold%Unknown%Stephen Vukosic%381
+410%50%Bradley%McKnight%Bradley G. McKnight%Unknown%Thomas W. Roman%389
+411%50%Adam%Platz%Adam P. Platz%Unknown%K. Michael O'Rielly%379
+412%50%Keith%Scott%Keith M. Scott%Unknown%Edmund B. Parrott%394
+413%50%Joshua%Weisberg%Joshua B. Weisberg%Unknown%David J. Solecki%402
+414%50%Joshua%Zito%Joshua M. Zito%Unknown%Marc L. Hobler%392
+415%51%Justin%Aiello%Justin F. Aiello%Unknown%Brett Baumeister%371
+416%51%Michael%Freisem%Michael C. Freisem%Unknown%Kevin M. Colegrove%374
+417%51%Erik%Jensen%Erik R. Jensen%Unknown%Zebulon Robbins, III%366
+418%51%Dino%Mariano%Dino A. Mariano%Unknown%Mark T. Zolty%345
+419%51%Keith%McGill%Keith McGill%Unknown%Duane B. Nelson%359
+420%51%James%Shahid%James Shahid, Jr.%Unknown%Fred A. Howell, II%393
+421%52%Robert%Burmaster%Robert M. Burmaster%Unknown%Ward Ackerson%280
+422%53%Jeffrey%Baran%Jeffrey W. Baran%Unknown%Darren M. Simmon%283
+423%53%Dennis%McGee%Dennis J. McGee%Unknown%Michael C. Freisem%416
+424%53%Timothy%Pennock%Timothy J. Pennock%Unknown%Dino A. Mariano%418
+425%53%Jeffrey%Rosenfeld%Jeffrey S. Rosenfeld%Unknown%Anthony M. Giamis%354
+426%54%John%Berkey%John A. Berkey, IV%Unknown%Erik R. Jensen%417
+427%54%Derek%Gigliotti%Derek J. Gigliotti%Unknown%Ward Ackerson%280
+428%54%Phuong%Ha%Phuong My Ha%Unknown%Unknown%0
+429%54%Matthew%Hantz%Matthew P. Hantz%Unknown%Michael C. Freisem%416
+430%54%Bryan%Mahoney%Bryan P. Mahoney%Unknown%Eric Newman%337
+431%54%Matthew%Moran%Matthew G. Moran%Unknown%Anthony M. Giamis%354
+432%54%Rami%Qumsieh%Rami M. Qumsieh%Unknown%Kevin M. Colegrove%374
+433%54%Robert%Rider%Robert S. Rider, Jr.%Unknown%Keith M. Scott%412
+434%54%Charles%Roberts%Charles R. Roberts%Unknown%Edward C. Seyerlein%362
+435%55%David%Chiu%David Chiu%Unknown%Matthew G. Moran%431
+436%55%Anthony%DeVincentis%Anthony DeVincentis%Unknown%Bradley G. McKnight%410
+437%55%Derek%Evoy%Derek P. Evoy%Unknown%James E. Osterhout%360
+438%55%Joel%Faaborg%Joel C. Faaborg%Unknown%Anthony Cresho%406
+439%55%Kim%Governali%Kim J. Governali%Unknown%Michael C. Freisem%416
+440%55%Eric%Heilig%Eric K. Heilig%Unknown%Robert S. Rider, Jr.%433
+441%55%Doug%Howarth%Doug J. Howarth%Unknown%Phuong My Ha%428
+442%55%Eric%Johnson%Eric K. Johnson%Unknown%Dennis J. McGee%423
+443%55%Robert%Langley%Robert Langley%Unknown%Stephen Vukosic%381
+444%55%Bruno%Telesca%Bruno J. Telesca%Unknown%Vincent V. Fatato%384
+445%55%Anthony%Vigliotti%Anthony M. Vigliotti%Unknown%John F. Fredette%408
+446%55%Ryan%Yanavage%Ryan W. Yanavage%Unknown%Adam P. Platz%411
+447%56%Nhien%Ngo%Nhien Ngo%Unknown%Keith McGill%419
+448%56%Roger%Chiu%Roger Chiu%Unknown%Charles R. Roberts%434
+449%56%Peter%Arnold%Peter S. Arnold%Unknown%John A. Berkey, IV%426
+450%57%Frank%Lopez%Frank P. Lopez%Brillo%Eric K. Johnson%442
+451%58%Erich%Buehner%Erich A. Buehner%Unknown%Jeffrey W. Baran%422
+452%58%Norman%England%Norman W. England, IV%Unknown%Anthony M. Vigliotti%445
+453%58%James%Fleming%James M. Fleming%Hambone%Eric K. Johnson%442
+454%58%Michael%Gelb%Michael D. Gelb%Unknown%James D. Adams%312
+455%58%Bryan%Miller%Bryan M. Miller%Unknown%Bruno J. Telesca%444
+456%58%Jonathan%Tripler%Jonathan E. Tripler%Unknown%Dennis J. McGee%423
+457%59%Joseph%Caruso%Joseph Caruso%Unknown%Erik R. Jensen%417
+458%59%Michael%Herbert%Michael W. Herbert%Unknown%Kim J. Governali%439
+459%59%Christopher%Mingone%Christopher J. Mingone%Unknown%Daniel Gold%409
+460%59%Christopher%Scott%Christopher T. Scott%Unknown%Dennis J. McGee%423
+461%59%Michael%Vallhiano%Michael W. Vallhiano%Unknown%Unknown%0
+462%59%Brandon%Walker%Brandon J. Waller%Unknown%Peter S. Arnold%449
+463%61%Geoffrey%Becker%Geoffrey Becker%Nixon%James M. Fleming%453
+464%61%Derek%Boyle%Derek M. Boyle%Unknown%Bryan M. Miller%455
+465%61%Geoffrey%Silkey%Geoffrey T. Silkey%Dupid%James D. Adams%312
+466%62%Vincent%Cuciti%Vincent P. Cuciti%Unknown%Unknown%0
+467%62%James%DeFelice%James P. DeFelice%Unknown%Derek M. Boyle%464
+468%62%Derrick%Lawrence%Derrick P. Lawrence%Unknown%Christopher T. Scott%460
+469%62%Jonathon%Pak%Jonathon B. Pak%Unknown%Unknown%0
+470%62%Chad%Willard%Chad Willard%Unknown%Ward Ackerson%280
+471%62%Richard%Wood%Richard A. Wood, III%Unknown%Christopher J. Mingone%459
+472%63%Luke%Anderson%Luke Anderson%Dunger%Richard A. Wood III%471
+473%64%Nick%Anderson%Nicholas R. Anderson%Alfalfa%Luke Anderson%472
+474%64%George%Apazidis%George M. Apazidis%Unknown%Derrick P. Lawrence%468
+475%64%Joshua%Burnett%Joshua Burnett%Unknown%Christopher J. Mingone%459
+476%64%Tony%Chiappone%Anthony M. Chiappone%Unknown%Erich A. Buehner%451
+477%64%Kevin%Ferber%Kevin P. Ferber%Unknown%Geoffrey T. Silkey%465
+478%64%Jonathan%Major%Jonathan J. Major%Unknown%Luke Anderson%472
+479%64%Christopher%Mergler%Christopher M. Mergler%Unknown%Christopher J. Mingone%459
+480%64%Frederick%Portz%Frederick C. Portz, Jr.%Unknown%Derek M. Boyle%464
+481%64%Jared%Slomack%Jared W. Slomack%Unknown%Unknown%0
+482%64%Scott%Teger%Scott H. Teger%Unknown%Geoffrey T. Silkey%465
+483%64%Matthew%Walldroff%Matthew C. Walldroff%Unknown%Unknown%0
+484%0%Jared%Slomack%Jared Slomack%Unknown%James P. DeFelice%467
+485%0%Christopher%Den%Christopher M. Den%Unknown%Richard A. Wood III%471
+486%0%Frederick%Claudes%Frederick Claudes, Jr.%Unknown%Luke Anderson%472
+487%0%Unknown%Unknown%Unknown%Unknown%Jonathan J. Major%478
+488%0%Scott%John%Scott John%Unknown%Unknown%0
+489%0%Adam%Benjamin%Adam Benjamin%Unknown%Unknown%0
+490%65%Brian%Coughlin%Brian Coughlin%Unknown%Richard A. Wood III%471
+491%65%Ryan%Cotham%Ryan Cotham%Unknown%Unknown%0
+492%65%Brennan%Kavanaugh%James B. Kavanaugh%Unknown%Luke Anderson%472
+493%65%Timothy%Pidlypchak%Timothy S. Pidlypchak%Dunesberry%Jonathan J. Major%478
+494%66%Chad%Gross%Chad M. Gross%Mighty Mouse%Brennan Kavanaugh%492
+495%66%Gregory%Humbert%Gregory Humbert%Pinky%Timothy S. Pidlypchak%493
+496%67%Adam%Benjamin%Adam L. Benjamin%Unknown%Timothy S. Pidlypchak%493
+497%68%Paul%Bergel%Paul Bergel%Unknown%Kevin P. Ferber%477
+498%68%Adam%Buehler%David Buehler%Ruby%Scott H. Teger%482
+499%68%David%Falletta%David A. Falletta%Plain Jane%Geoff Becker%463
+500%68%Dylan%Uprichard%Dylan T. Uprichard%Unknown%Frederick C Portz Jr%480
+501%69%Michael%Feness%Michael D. Feness%Unknown%Geoff Becker%463
+502%69%Jeffrey%Filipovitz%Jeffrey Filipovitz%Unknown%Adam Benjamin%489
+503%69%Jacob%Mathew%Jake G. Mathew%Elmo%Nicholas R. Anderson%473
+504%69%Robert%Rooker%Robert Rooker%Unknown%Kevin P. Ferber%477
+505%70%Brian%Butler%Brian Butler%Chomp%Timothy S. Pidlypchak%493
+506%70%Samir%Jain%Samir Jain%Scuba Steve%Gregory Humbert%495
+507%71%David%Bevino%David J. Bevino%Unknown%Ryan Cotham%491
+508%72%Removed%Removed%Removed%Removed%Scott John%488
+509%73%Justin%Brower%Justin Brower%Unknown%Adam Benjamin%489
+510%73%Andrew%Hesky%Andrew Hesky%Cabana Boy%Samir Jain%506
+511%73%Michael%Schenck%Michael Schenck%Brain%Chad M. Gross%494
+512%73%Joseph%Schork%Joseph S. Schork, II%Ralph%Nicholas R. Anderson%473
+513%73%Peter%Scott%Peter Scott%Worm%Brian Butler%505
+514%73%Caleb%Sebra%Caleb Sebra%Unknown%Timothy S. Pidlypchak%493
+515%74%Daniel%O'Hanlon%Daniel J. O'Hanlon%Unknown%Peter Scott%513
+516%74%Mark%Stoehrer%Mark August Stoehrer%Unknown%Adam L. Benjamin%496
+517%75%Alistair%Adams%Alistair Adams%Unknown%Daniel J. O'Hanlon%515
+518%75%Geoffrey%Cassell%Geoffrey W. Cassell%Dumb%Geoff Becker%463
+519%75%Anthony%Dennis%Anthony A. Dennis%Flinstone%David A. Falletta%499
+520%75%Joshua%Duewer%Joshua Duewer%Searoy%Jake G. Mathew%503
+521%75%Josh%Gingrich%Josh Gingrich%Unknown%Unknown%0
+522%75%Prateek%Lodha%Prateek Lodha%Balky%Samir Jain%506
+523%75%Edward%Murrow%Edward Murrow%K-Y-Gb%Peter Scott%513
+524%75%Daniel%O'Brien%Daniel O'Brien%Unknown%Unknown%0
+525%75%Jason%Tapley%Jason A. Tapley%Bitch In The Corner%Mark August Stoehrer%516
+526%75%Michael%VanChieri%Michael J. Vanchieri%Unknown%Unknown%0
+527%76%Jeremy%Wilson%Jeremy Wilson%Scrotum Hair%Peter Scott%513
+528%77%Ryan%Aguinaldo%Ryan F. Aguinaldo%Uncle Jesse%Samir Jain%506
+529%77%John%Buehler%John R. Buehler%Dumber%Geoffrey W. Cassell%518
+530%77%Michael%DeSilva%Michael D. DeSilva%Care Bear%Peter Scott%513
+531%77%William%Jevitts%William Jevitts%Layaway%Jeremy Wilson%527
+532%77%Patrick%McKenna%Patrick McKenna%Kokrott%Jason A. Tapley%525
+533%77%Matthew%Merritt%Matthew Merritt%Caulkin%Edward Murrow%523
+534%77%Anthony%Ocon%Anthony J. Ocon%Mrs Miyagi%David A. Falletta%499
+535%78%Matthew%Grimard%Matthew Grimard%Crabs%Geoffrey W. Cassell%518
+536%78%Julien%Hass%Julien Hass%Honey I Shrunk The Kid%Prateek Lodha%522
+537%78%Cody%Rorick%Cody Rorick%Blinky%Andrew Hesky%510
+538%78%Michael%Sedlack%Michael Sedlack%Shmagoogly%Peter Scott%513
+539%78%Robert%Sullivan%Robert W. Sullivan%Wiggle Puppy%Joseph S. Schork II%512
+540%79%Richard%Allen%Richard Allen%Minesir%Ryan F. Aguinaldo%528
+541%79%Derek%Lee%Derek Lee%Unknown%Unknown%0
+542%79%Charles%Panayides%Charles T. Panayides%Keanu%Samir Jain%506
+543%0%Removed%Removed%Removed%Removed%Unknown%0
+544%80%Franklin%Strube%Franklin P. Strube%Hamper Humper%Charles T. Panayides%542
+545%81%Christopher%Gersky%Christopher Gersky%Rank Ass Cooch%William Jevitts%531
+546%81%Luke%Smith%Luke Smith%Can You Hear Me Now?%Charles T. Panayides%542
+547%81%David%Van Wart%David Van Wart%Bebop%Richard Allen%540
+548%81%Removed%Removed%Removed%Removed%Franklin P. Strube%544
+549%82%Michael%Klemencic%Michael Klemencic%The Rag%Edward Murrow%523
+550%82%Daniel%Mahoney%Daniel Mahoney%Farva%Franklin P. Strube%544
+551%83%Ryan%Bucinell%Ryan M. Bucinell%Webelos%Cody Rorick%537
+552%83%Tony%Schepis%Anthony R. Schepis%Vacuum Fight%Franklin P. Strube%544
+553%83%Christopher%Tydings%Christopher Tydings%Rank Ass Twat%Christopher Gersky%545
+554%84%Andrew%Karki%Andrew Karki%Yogi%Julien Hass%536
+555%85%Jacob%Divine%Jake D. Divine%Ducktape, Steer%Richard Allen%540
+556%85%Jason%Hughes%Jason Hughes%Carlton%Daniel Mahoney%550
+557%85%Nick%Giudice%Nicholas S. Giudice%Bukaki%Anthony R. Schepis%552
+558%86%Josue%Alvarez%Josue Alvarez%Rank Ass Spic%Christopher Gersky%545
+559%86%Justin%Frederick%Justin Frederick%Jr. Bacon Rael Burger (AKA Iron Man)%Michael D. DeSilva%530
+560%86%Mathias%Hoelzli%Mathias Hoelzli%Heil%Anthony R. Schepis%552
+561%86%Matthew%Marshall%Matthew Marshall%Tweedle Dumb%Andrew Karki%554
+562%86%Davendra%Sukha%Davendra Sukha%Zero Proof%Jason Hughes%556
+563%87%Adam%Allocco%Adam R. Allocco%New England Clam Chowder On Rye%Ryan F. Aguinaldo%528
+564%87%Daniel%Barton%Daniel J. Barton%Mikey Pooh%Jason Hughes%556
+565%87%Brendan%Galinn%Brendan Galinn%Bu Bu%Andrew Karki%554
+566%87%Tulio%Silberberg%Tulio G. Silberberg%Freakin Reakin%Charles T. Panayides%542
+567%87%Matthew%Keough%Matthew Keough%Bitch Slap%Robert W. Sullivan%539
+568%87%Lucas%Marion%Lucas Marion%Pumba%Jason Hughes%556
+569%87%Dustin%McKibben%Dustin M. McKibben%Captain Kirk%Nicholas S. Giudice%557
+570%87%Removed%Removed%Removed%Removed%Michael Klemencic%549
+571%87%Jerry%Pilkenton%Jerry Pilkenton%What, You Don't Like Money?%Anthony R. Schepis%552
+572%87%Nick%Snell%Nicholas R. Snell%Pig Pen%Ryan M. Bucinell%551
+573%87%Phillip%Tatti%Phillip Tatti%Pumba's Timone%Matthew Grimard%535
+574%87%Evan%Wendt%Evan P. Wendt%Bareback%Josue Alvarez%558
+575%87%John%Wilson%John R. Wilson%Suped Up S-10%Christopher Tydings%553
+576%88%Matthew%Bialek%Matthew Bialek%Kayla%Lucas Marion%568
+577%88%Alex%Brown%Alexander C. Brown%Poopdick%Tulio G. Silberberg%566
+578%88%Madhur%Jain%Madhur Jain%Slurp N' Gulp%Charles T. Panayides%542
+579%88%Ryan%Nelson%Ryan W. Nelson%Alysa Is Fat%David Van Wart%547
+580%88%Brian%Schnitzer%Brian Schnitzer%Admiral Akbar%Lucas Marion%568
+581%88%Johnathan%Shepard%Johnathan Shepard%Alter Boy%Brendan Galinn%565
+582%88%William%Shorrock%William Shorrock%Bloody Tea Bag%Michael D. DeSilva%530
+583%88%Eric%Vergo%Eric Vergo%Tony Has A Tiny Penis%Anthony R. Schepis%552
+584%88%Nicholas%Winikus%Nicholas Winikus%Mathias Is A Homo%Matthew Keough%567
+585%89%Removed%Removed%Removed%Removed%John R. Wilson%575
+586%89%Dennis%Roffo%Dennis Roffo%Golden Shower%Nicholas Winikus%584
+587%90%Derrick%Agins%Derrick Agins%Uncle Jemima%Nicholas Winikus%584
+588%90%Brennan%Kiely%Brennan Kiely%Big Dick Bandit%Davendra Sukha%562
+589%90%Tristen%Payne%Tristen Payne%Edward Penis Hands%Jerry Pilkenton%571
+590%90%David%Petko%David S. Petko%Pedophile Dave%Phillip Tatti%573
+591%90%Timothy%Ruth%Timothy Ruth%Meg%Evan P. Wendt%574
+592%91%Lucas%Netti%Lucas Netti%Stupid%Ryan W. Nelson%579
+593%91%Removed%Removed%Removed%Removed%David S. Petko%590
+594%92%Connor%Delaney%Connor Delaney%Justin Beejer%Eric Vergo%583
+595%92%Jake%Hinds%Jacob Stanley Hinds%Peppermint Swirl%Brennan Kiely%588
+596%92%Theodore%Wrzos%Theodore Wrzos%Dick Wanderer%Nicholas Winikus%584
+597%93%Thomas%Appel%Thomas Appel%Anal Espionage%Jacob Stanley Hinds%595
+598%93%Dominick%Baker%Dominick Baker%Tubby Tubby%Jerry Pilkenton%571
+599%93%Robert%Dyason%Robert Dyason%Allie Is Fat%Ryan W. Nelson%579
+600%93%David%Haller%David Haller%Dick Finder%Ted Wroz%596
+601%93%Steve%Hayes%Steve Hayes%Scooby's Bitch%Connor Delaney%594
+602%93%Carter%Helch%Carter Helch%Squish Mittens%Ted Wroz%596
+603%93%Edward%Hemp%Edward F. Hemp, IV%Gersky's Dog%Nicholas Winikus%584
+604%93%Kristopher%Kidder%Kristopher Kidder%No Grass Play In The Mud%David S. Petko%590
+605%93%Ahkil%Koka%Ahkil Koka%Camel Fucker%Tulio G. Silberberg%566
+606%93%Zachary%Kutik%Zachary Kutik%Double Justin Ass Pounder With Cheese%Justin Frederick%559
+607%93%Christian%Lemiuex%Christian Lemiuex%Rank Ass Holocaust%Christopher Gersky%545
+608%93%Spencer%Locke%Spencer Locke%Gay Beard The Pirate%Nicholas Winikus%584
+609%93%Zak%Novak%Zak Novak%Snookie%David S. Petko%590
+610%93%Joseph%Nuttle%Joseph Nuttle%Bloodnut The Flatulent%Josue Alvarez%558
+611%93%Derek%Palmerton%Derek Palmerton%Vergo Has A Heavy Flow%Eric Vergo%583
+612%93%Jonathan%Phan%Jonathan Phan%Bing Bong Ching Chong%Adam R. Allocco%563
+613%93%Jack%Wellington%Jack Wellington%Nelson's Pink Sock%Ryan W. Nelson%579
+614%93%Noah%Wexler%Noah Wexler%Karki Is A Hunchback%Madhur Jain%578
+615%93%Derin%Yarsuvat%Derin Yarsuvat%Gersky Loves Turkey%Madhur Jain%578
+616%93%Kyle%Zarnoch%Kyle Zarnoch%Small Dick Shopper%Brennan Kiely%588
+617%94%Matthew%DePalo%Matthew DePalo%GuiBro%Madhur Jain%578
+618%94%Marshall%Hallenbeck%Marshall J. Hallenbeck%Daniel-San%Jonathan Phan%612
+619%94%Michael%Kormos%Michael Kormos%Guacamole%Zak Novak%609
+620%94%Eric%Marguerite%Eric Marguerite%Property Of The Kyle%Kyle Zarnoch%616
+621%94%Andrew%Mueller%Andrew Mueller%Ted's Piss Bucket%Joseph Nuttle%610
+622%94%Joseph%Perreaux%Joseph Perreaux%Wiff%Carter Helch%602
+623%94%Jarrett%Plante%Jarrett Plante%Dr. Girlfriend%Noah Wexler%614
+624%94%Colton%Spahmer%Colton Spahmer%Rabbit%Jacob Stanley Hinds%595
+625%94%John%Tellgren%John Tellgren%I'll Give You A Nickel To Tickle My Pickle%Theodore Wrzos%596
+626%95%Michael%Czupryna%Michael Czupryna%Czupryna The Teenage Bitch%Jarrett Plante%623
+627%95%Nicolas%Deriu%Nicolas Deriu%D Money's Slam Piece%Marshall J. Hallenbeck%618
+628%95%Samuel%Friedman%Samuel R. Friedman%Dildo Faggins%Kyle Zarnoch%616
+629%95%Justin%Gerard%Justin Gerard%Ogre Fucker%David Haller%600
+630%95%Brian%Meyers%Brian Meyers%The Thumb%Derrick Agins%587
+631%95%Evan%Ney%Evan Ney%What Does A Gay Horse Eat? Neyyy!%Kristopher Kidder%604
+632%95%Ryan%Rosen%Ryan Rosen%I Wish I Fucked The Ogre%Noah Wexler%614
+633%95%Michael%Smith%Michael Smith%I Wish I Had A Different Big%Carter Helch%602
+634%95%David%Sugarman%David Sugarman%Taste The Rainbow%Jonathan Phan%612
+635%96%Maxwell%Guerine%Maxwell Guerine%Ivory%Ahkil Koka%605
+636%96%Zachary%Samuelson%Zachary Samuelson%Ebony%Dennis Roffo%586
+637%97%Zakir%Abrahim%Zakir Abrahim%GuiBrown%Matthew DePalo%617
+638%97%Kevin%Frederickson%Kevin Frederickson%Sugar Cub%David Sugarman%634
+639%97%Rythm%Gade%Rythm Gade%Mr. Blackout%Maxwell Guerine%635
+640%97%Cory%Mahony%Cory Mahony%Raid The Fridge%Zachary Samuelson%636
+641%97%Joseph%Pereira%Joseph Pereira%Jarrett's Punching Bag%Eric Marguerite%620
+642%97%Jordan%Staley%Jordan Staley%Derek Has A Meeting Boner%Derek Palmerton%611
+643%97%Yaroslav%Tochinski%Yaroslav Tochinski%Comrade Question%Michael Smith%633
+644%97%Conner%Westover%Conner Westover%Chris%Timothy Ruth%591
+0%0%Unknown%Unknown%Unknown%Unknown%Unknown%0
+645%98%Andrew%Cerkanowicz%Andrew Cerkanowicz%Oedipuss%Maxwell Guerine%635
+646%98%Aaron%Stadler%Aaron M. Stadler%Dennis Is A Prick%Zachary Samuelson%636
+647%99%Devon%Aronson%Devon Aronson%The Other White Meat%Derin Yarsuvat%615
+648%99%Harold%Eifler%Harold Eifler%Breakfast Club%Michael Smith%633
+649%99%Cesar%Borges%Cesar Borges%Inside Voice%Matthew DePalo%617
+650%99%Thomas%Maddox%Thomas Maddox%Jank 2: High Voltage%Andrew Cerkanowicz%645
+651%100%Jacob%Acuna%Jacob Acuna%Acuna Matata%Evan Ney%631
+652%100%Scott%Adelman%Scott Adelman%Jordan Has A Lifting Fetish%Jordan Staley%642
+653%100%Brian%Bogan%Brian Bogan%Stewie%Conner Westover%644
+654%100%Dylan%Booth%Dylan Booth%Scooty Puff%Joseph Pereira%641
+655%100%Damien%Brown%Damien Brown%Fresh Prince of B.O.%Conner Westover%644
+656%100%Damien%Dobson%Damien Dobson%I Wish I Had A Better Hegemon%Andrew Cerkanowiccz%645
+657%100%Adam%Duvin%Adam Duvin%One Step Downs%Kevin Frederickson%638
+658%100%Armand%Florio%Armand Florio%Scroto Faggins%Samuel R. Friedman%628
+659%100%Michael%Halligan%Michael Halligan%Kind Of A Cock%Michael Smith%633
+660%100%Hussein%Hamdan%Hussein Hamdan%Pabst Blue Ranch%Maxwell Guerine%635
+661%100%George%Haverly%George Haverly%Feel The Bern%Samuel R. Friedman%628
+662%100%Dawson%Hilk%Dawson Hilk%Dawshank Redemption%Evan Ney%631
+663%100%Matthew%Mariano%Matthew Mariano%Johnny Appelseed%Thomas Appel%597
+664%100%Joshua%Middleton%Joshua Middleton%White & Mild%Nicolas Deriu%627
+665%100%Adam%Morton%Adam Morton%Hinckley Jr. Jr.%Maxwell Guerine%635
+666%100%Faizan%Naveed%Faizan Naveed%Ketchup Sandwich%Andrew Cerkanowicz%645
+667%100%Brent%Neves%Brent Neves%TBD%Zachary Samuelson%636
+668%100%HeeJae%Shin%HeeJae Shin%Kim Jong Dos%Cesar Borges%649
+669%100%Michael%Tucker%Michael Tucker%Beanie Baby%Michael Smith%633
+670%100%Andrew%Wise%Andrew Wise%Brip Brap Blender Beer%Matthew DePalo%617

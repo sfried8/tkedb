@@ -8,8 +8,7 @@ class Brother(models.Model):
 	name = models.CharField(max_length=50)
 	nickname = models.CharField(max_length=50)
 	big = models.CharField(max_length=50)
-	bigS = models.IntegerField(max_length=50)
-	curPos = models.CharField(max_length=3)
+	bigS = models.IntegerField()
 	active = models.BooleanField(default=False)
 	wasPry = models.BooleanField(default=False)
 	wasEpi = models.BooleanField(default=False)
@@ -22,3 +21,8 @@ class Brother(models.Model):
 
 	def __str__(self):
 		return str(self.scroll)+": "+str(self.pc)+self.name
+
+class Officer(models.Model):
+	title = models.CharField(max_length=20)
+	jewel_image = models.CharField(max_length=20)
+	current = models.ForeignKey('Brother')
