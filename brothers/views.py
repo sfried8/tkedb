@@ -240,6 +240,14 @@ def searchPage(request):
 def PC(request,pc):
     return render(request, 'brothers/PC.html',{'brothers':Brother.objects.filter(pc=pc),'pc':pc})
 
+@login_required(login_url="brothers.views.login")
+def actives(request):
+    return render(request, 'brothers/actives.html',{'brothers':Brother.objects.filter(active=True)})
+
+@login_required(login_url="brothers.views.login")
+def eboard(request):
+    return render(request, 'brothers/eboard.html',{'officers':Officer.objects.all()})
+
 def getTree(scroll):
     tree = []
     curr = Brother.objects.get(scroll=scroll)

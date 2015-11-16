@@ -20,9 +20,11 @@ class Brother(models.Model):
 
 
 	def __str__(self):
-		return str(self.scroll)+": "+str(self.pc)+self.name
+		return str(self.scroll)+") "+self.name+" PC "+str(self.pc)
 
 class Officer(models.Model):
 	title = models.CharField(max_length=20)
 	jewel_image = models.CharField(max_length=20)
 	current = models.ForeignKey('Brother')
+	def __str__(self):
+		return self.title + " - "+current.name
