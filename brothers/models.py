@@ -27,4 +27,4 @@ class Officer(models.Model):
 	jewel_image = models.CharField(max_length=20)
 	current = models.ForeignKey('Brother')
 	def __str__(self):
-		return self.title + " - "+current.name
+		return self.title + " - "+self.current.name
