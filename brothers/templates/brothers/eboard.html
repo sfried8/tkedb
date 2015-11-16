@@ -4,19 +4,17 @@
 <title>EBoard - TKE Scroll</title>
 <h1 class="header">EBoard</h1>
 
-<table class="ui table segment">
+<table class="ui center aligned collapsing table segment">
 	<tbody>
 		{%for o in officers%}
 		<tr>
 			<td>
-				<b>{{o.title}}</b>
-				<br/>
 				<img src="{{STATIC_URL}}images/{{o.jewel_image}}" style="margin:0 auto;" />
+				<br/>
+				<b>{{o.title}}</b>
 			</td>
 			<td>
-				{{o.current.name}}
-				<br/>
-				<input class="ui button" type="button" value="View Full Page" onClick="window.location='{%url 'detail' o.current.scroll%}' "/>
+                <p><a href="{% url 'detail' o.current.scroll%}">{{o.current.name}}</a></p>
 			</td>
 		</tr>
 		{%endfor%}
