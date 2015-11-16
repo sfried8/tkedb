@@ -79,12 +79,25 @@ $(window).bind('orientationchange', function () {
                 	<i class="play basic icon"></i>
                 	TKE Xi-Upsilon
                 </a>
-                <a class="item" href="/scroll/"style="position:relative;overflow:auto;min-width:8%;width:8%;	white-space: nowrap;">
-                	<i class="list icon"></i> Scroll
-                </a>
-               	<a class="item" href="/facts/"style="position:relative;overflow:auto;min-width:8%;width:8%;	white-space: nowrap;">
-                	<i class="lightbulb icon"></i>Facts
-                </a>
+            </div>
+            <div class="ui dropdown item">
+                View <i class="icon dropdown"></i>
+                <div class="menu">
+                    <a class="item" href="/scroll/"style="position:relative;overflow:auto;min-width:8%;width:8%;    white-space: nowrap;">
+                        <i class="list icon"></i> Scroll
+                    </a>
+                    <a class="item" href="/actives/"style="position:relative;overflow:auto;min-width:8%;width:8%;    white-space: nowrap;">
+                        <i class="users icon"></i> Active Chapter
+                    </a>
+                    <a class="item" href="/eboard/"style="position:relative;overflow:auto;min-width:8%;width:8%;    white-space: nowrap;">
+                        <i class="legal icon"></i> EBoard
+                    </a>
+                    <a class="item" href="/facts/"style="position:relative;overflow:auto;min-width:8%;width:8%; white-space: nowrap;">
+                        <i class="lightbulb icon"></i>Facts
+                    </a>
+                </div>
+            </div>
+                
                 <div class="item"style="position:relative;min-width:57%;width:57%;white-space: nowrap;">
                     <div class="ui form"style="white-space: nowrap;">
                         <form class="ui form" action="/search/" method="get"style="white-space: nowrap;">
@@ -130,7 +143,6 @@ $(window).bind('orientationchange', function () {
                 <a class="item" href="/logout/"style="position:relative;overflow:auto;min-width:10%;width:10%;">
                 <i class="sign out icon"></i>Log Out
                 </a>
-            </div>
         </div>
         <div class="ui fixed red inverted labeled icon menu" id="mobilemenu" style="top:0px;left:0px;width:100%;white-space: nowrap;">
             <a class="red item" href="{%url 'home'%}" style="width:20%;">
