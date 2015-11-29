@@ -3,6 +3,10 @@
 <title>Edit Actives - TKE Scroll</title>
 <h1>Edit Actives</h1>
 {%for b in brothers%}
-<input type="checkbox" id="active" data-scroll="{{b.scroll}}" /><p>{{b.scroll}}. {{b.name}} </p>
+{%if b.active%}
+<input type="checkbox" id="active" data-scroll="{{b.scroll}}" checked="checked" /><p>{{b.scroll}}. {{b.name}} </p>
+{%else%}
+<input type="checkbox" id="active" data-scroll="{{b.scroll}}" checked="unchecked" /><p>{{b.scroll}}. {{b.name}} </p>
+{%endif%}
 {%endfor%}
 {%endblock%}
