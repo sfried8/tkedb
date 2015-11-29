@@ -1,0 +1,9 @@
+{%extends 'layout.html'%}
+{%block content%}
+<title>Edit Actives - TKE Scroll</title>
+<h1>Edit Actives</h1>
+{%for b in brothers%}
+<input type="checkbox" id="active" data-catid="{{b.scroll}}" />
+<p>{{b.scroll}}. {{b.name}} </p>
+{%endfor%}
+{%endblock%}

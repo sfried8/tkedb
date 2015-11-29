@@ -245,6 +245,27 @@ def actives(request):
     return render(request, 'brothers/actives.html',{'brothers':Brother.objects.filter(active=True)})
 
 @login_required(login_url="brothers.views.login")
+def editActives(request):
+    if not request.user.is_superuser:
+        return redirect('/actives/')
+    return render(request, 'brothers/editActives.html',{'brothers':Brother.objects.all()})
+
+@login_required(login_url="brothers.views.login")
+def update_active(request):
+    context = RequestContext(request)
+    brother_scroll = None
+    if request.method == 'GET':
+        brother_scroll = request.GET['brother_scroll']
+        brother_active = request.GET['brother_active']
+
+    if brother_scroll:
+        brother = Brother.objects.get(scroll=int(brother_scroll))
+        if brother:
+            brother.active = brother_active
+            brother.save()
+    return HttpResponse()
+
+@login_required(login_url="brothers.views.login")
 def eboard(request):
     return render(request, 'brothers/eboard.html',{'officers':Officer.objects.all()})
 
